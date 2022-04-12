@@ -1,0 +1,465 @@
+{
+    "openapi": "3.1.0",
+    "info": {
+      "title": "PUB API",
+      "version": "1.0"
+    },
+    "paths": {
+      "/nieuws": {
+        "get": {
+          "summary": "Your GET endpoint",
+          "tags": [],
+          "responses": {},
+          "operationId": "get-nieuws"
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "Nieuws": {
+          "title": "Nieuws",
+          "type": "object",
+          "examples": [
+            {
+              "id": "string",
+              "title": "string",
+              "content": "string",
+              "excerpt": "string",
+              "date": "2019-08-24",
+              "slug": "string",
+              "post-status": "string",
+              "connected": {
+                "openpub-item_to_theme": [
+                  null
+                ],
+                "openpub-item_to_openpub-subtheme": [
+                  null
+                ],
+                "openpub-item_to_openpub-location": [
+                  null
+                ],
+                "openpub-item_to_openpub-item": [
+                  null
+                ]
+              },
+              "downloads": [
+                null
+              ],
+              "expired": {
+                "message": "string",
+                "status": true,
+                "on": {
+                  "date": "2019-08-24",
+                  "timezone_type": 0,
+                  "timezone": "string"
+                }
+              },
+              "highlighted": true,
+              "image": {
+                "title": "string",
+                "description": "string",
+                "caption": "string",
+                "alt": "string",
+                "rendered": "string",
+                "sizes": "string",
+                "srcset": "string",
+                "meta": {
+                  "width": 0,
+                  "height": 0,
+                  "file": "string",
+                  "sizes": {
+                    "medium": {
+                      "file": "string",
+                      "width": 0,
+                      "height": 0,
+                      "mime-type": "string",
+                      "url": "string",
+                      "rendered": "string"
+                    },
+                    "large": {
+                      "file": "string",
+                      "width": 0,
+                      "height": 0,
+                      "mime-type": "string",
+                      "url": "string",
+                      "rendered": "string"
+                    },
+                    "thumbnail": {
+                      "file": "string",
+                      "width": 0,
+                      "height": 0,
+                      "mime-type": "string",
+                      "url": "string",
+                      "rendered": "string"
+                    },
+                    "medium_large": {
+                      "file": "string",
+                      "width": 0,
+                      "height": 0,
+                      "mime-type": "string",
+                      "url": "string",
+                      "rendered": "string"
+                    },
+                    "full": {
+                      "file": "string",
+                      "width": 0,
+                      "height": 0,
+                      "mime-type": "string",
+                      "url": "string",
+                      "rendered": "string"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string",
+              "maxLength": 255
+            },
+            "content": {
+              "type": "string"
+            },
+            "excerpt": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string",
+              "format": "date"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "post-status": {
+              "type": "string"
+            },
+            "connected": {
+              "type": "object",
+              "properties": {
+                "openpub-item_to_theme": {
+                  "type": "array",
+                  "items": {}
+                },
+                "openpub-item_to_openpub-subtheme": {
+                  "type": "array",
+                  "items": {}
+                },
+                "openpub-item_to_openpub-location": {
+                  "type": "array",
+                  "items": {}
+                },
+                "openpub-item_to_openpub-item": {
+                  "type": "array",
+                  "items": {}
+                }
+              }
+            },
+            "downloads": {
+              "type": "array",
+              "items": {}
+            },
+            "expired": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "boolean"
+                },
+                "on": {
+                  "type": "object",
+                  "properties": {
+                    "date": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "timezone_type": {
+                      "type": "integer"
+                    },
+                    "timezone": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "highlighted": {
+              "type": "boolean"
+            },
+            "image": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "caption": {
+                  "type": "string"
+                },
+                "alt": {
+                  "type": "string"
+                },
+                "rendered": {
+                  "type": "string"
+                },
+                "sizes": {
+                  "type": "string"
+                },
+                "srcset": {
+                  "type": "string"
+                },
+                "meta": {
+                  "type": "object",
+                  "properties": {
+                    "width": {
+                      "type": [
+                        "number",
+                        "integer"
+                      ]
+                    },
+                    "height": {
+                      "type": [
+                        "number",
+                        "integer"
+                      ]
+                    },
+                    "file": {
+                      "type": "string",
+                      "maxLength": 25
+                    },
+                    "sizes": {
+                      "type": "object",
+                      "properties": {
+                        "medium": {
+                          "type": "object",
+                          "properties": {
+                            "file": {
+                              "type": "string"
+                            },
+                            "width": {
+                              "type": [
+                                "number",
+                                "integer"
+                              ]
+                            },
+                            "height": {
+                              "type": [
+                                "number",
+                                "integer"
+                              ]
+                            },
+                            "mime-type": {
+                              "type": "string"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "rendered": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "large": {
+                          "type": "object",
+                          "properties": {
+                            "file": {
+                              "type": "string"
+                            },
+                            "width": {
+                              "type": [
+                                "number",
+                                "integer"
+                              ]
+                            },
+                            "height": {
+                              "type": [
+                                "number",
+                                "integer"
+                              ]
+                            },
+                            "mime-type": {
+                              "type": "string"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "rendered": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "thumbnail": {
+                          "type": "object",
+                          "properties": {
+                            "file": {
+                              "type": "string"
+                            },
+                            "width": {
+                              "type": [
+                                "number",
+                                "integer"
+                              ]
+                            },
+                            "height": {
+                              "type": [
+                                "number",
+                                "integer"
+                              ]
+                            },
+                            "mime-type": {
+                              "type": "string"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "rendered": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "medium_large": {
+                          "type": "object",
+                          "properties": {
+                            "file": {
+                              "type": "string"
+                            },
+                            "width": {
+                              "type": [
+                                "number",
+                                "integer"
+                              ]
+                            },
+                            "height": {
+                              "type": [
+                                "number",
+                                "integer"
+                              ]
+                            },
+                            "mime-type": {
+                              "type": "string"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "rendered": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "full": {
+                          "type": "object",
+                          "properties": {
+                            "file": {
+                              "type": "string"
+                            },
+                            "width": {
+                              "type": [
+                                "number",
+                                "integer"
+                              ]
+                            },
+                            "height": {
+                              "type": [
+                                "number",
+                                "integer"
+                              ]
+                            },
+                            "mime-type": {
+                              "type": "string"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "rendered": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "links": {
+              "type": "array",
+              "items": {}
+            },
+            "notes": {
+              "type": "string"
+            },
+            "synonyms": {
+              "type": "string"
+            },
+            "taxonomies": {
+              "type": "object",
+              "properties": {
+                "openpub-audience": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "slug": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "openpub-type": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "slug": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "openpub-usage": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "slug": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "openpub-show-on": {
+                  "type": "array",
+                  "items": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
