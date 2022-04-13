@@ -1,43 +1,1555 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "PDC",
+    "title": "PUB API",
     "version": "1.0"
   },
   "paths": {
-    "/products": {
+    "/nieuws": {
       "get": {
         "summary": "Your GET endpoint",
         "tags": [],
-        "operationId": "get-product",
-        "description": "Vraag alle producten op",
+        "operationId": "get-nieuws",
         "responses": {
           "200": {
             "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Product"
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "Nieuws": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "required": [
+                          "id",
+                          "title",
+                          "content",
+                          "excerpt",
+                          "date",
+                          "slug",
+                          "post_status",
+                          "highlighted",
+                          "notes",
+                          "synonyms"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "number"
+                          },
+                          "title": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "content": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "excerpt": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "date": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "slug": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "post_status": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "connected": {
+                            "type": "object",
+                            "properties": {
+                              "openpub-item_to_openpub-theme": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "minItems": 1,
+                                "items": {
+                                  "required": [],
+                                  "properties": {}
+                                }
+                              },
+                              "openpub-item_to_openpub-subtheme": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "minItems": 1,
+                                "items": {
+                                  "required": [],
+                                  "properties": {}
+                                }
+                              },
+                              "openpub-item_to_openpub-location": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "minItems": 1,
+                                "items": {
+                                  "required": [],
+                                  "properties": {}
+                                }
+                              },
+                              "openpub-item_to_openpub-item": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "minItems": 1,
+                                "items": {
+                                  "required": [],
+                                  "properties": {}
+                                }
+                              }
+                            },
+                            "required": [
+                              "openpub-item_to_openpub-theme",
+                              "openpub-item_to_openpub-subtheme",
+                              "openpub-item_to_openpub-location",
+                              "openpub-item_to_openpub-item"
+                            ]
+                          },
+                          "downloads": {
+                            "type": "array",
+                            "uniqueItems": true,
+                            "minItems": 1,
+                            "items": {
+                              "required": [],
+                              "properties": {}
+                            }
+                          },
+                          "expired": {
+                            "type": "object",
+                            "properties": {
+                              "message": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "status": {
+                                "type": "boolean"
+                              },
+                              "on": {
+                                "type": "object",
+                                "properties": {
+                                  "date": {
+                                    "type": "string",
+                                    "minLength": 1
+                                  },
+                                  "timezone_type": {
+                                    "type": "number"
+                                  },
+                                  "timezone": {
+                                    "type": "string",
+                                    "minLength": 1
+                                  }
+                                },
+                                "required": [
+                                  "date",
+                                  "timezone_type",
+                                  "timezone"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "message",
+                              "status",
+                              "on"
+                            ]
+                          },
+                          "highlighted": {
+                            "type": "boolean"
+                          },
+                          "image": {
+                            "type": "object",
+                            "properties": {
+                              "title": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "description": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "caption": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "alt": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "rendered": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "sizes": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "srcset": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "meta": {
+                                "type": "object",
+                                "properties": {
+                                  "width": {
+                                    "type": "number"
+                                  },
+                                  "height": {
+                                    "type": "number"
+                                  },
+                                  "file": {
+                                    "type": "string",
+                                    "minLength": 1
+                                  },
+                                  "sizes": {
+                                    "type": "object",
+                                    "properties": {
+                                      "medium": {
+                                        "type": "object",
+                                        "properties": {
+                                          "file": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "width": {
+                                            "type": "number"
+                                          },
+                                          "height": {
+                                            "type": "number"
+                                          },
+                                          "mime-type": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "url": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "rendered": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          }
+                                        },
+                                        "required": [
+                                          "file",
+                                          "width",
+                                          "height",
+                                          "mime-type",
+                                          "url",
+                                          "rendered"
+                                        ]
+                                      },
+                                      "large": {
+                                        "type": "object",
+                                        "properties": {
+                                          "file": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "width": {
+                                            "type": "number"
+                                          },
+                                          "height": {
+                                            "type": "number"
+                                          },
+                                          "mime-type": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "url": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "rendered": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          }
+                                        },
+                                        "required": [
+                                          "file",
+                                          "width",
+                                          "height",
+                                          "mime-type",
+                                          "url",
+                                          "rendered"
+                                        ]
+                                      },
+                                      "thumbnail": {
+                                        "type": "object",
+                                        "properties": {
+                                          "file": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "width": {
+                                            "type": "number"
+                                          },
+                                          "height": {
+                                            "type": "number"
+                                          },
+                                          "mime-type": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "url": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "rendered": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          }
+                                        },
+                                        "required": [
+                                          "file",
+                                          "width",
+                                          "height",
+                                          "mime-type",
+                                          "url",
+                                          "rendered"
+                                        ]
+                                      },
+                                      "medium_large": {
+                                        "type": "object",
+                                        "properties": {
+                                          "file": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "width": {
+                                            "type": "number"
+                                          },
+                                          "height": {
+                                            "type": "number"
+                                          },
+                                          "mime-type": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "url": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "rendered": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          }
+                                        },
+                                        "required": [
+                                          "file",
+                                          "width",
+                                          "height",
+                                          "mime-type",
+                                          "url",
+                                          "rendered"
+                                        ]
+                                      },
+                                      "full": {
+                                        "type": "object",
+                                        "properties": {
+                                          "file": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "width": {
+                                            "type": "number"
+                                          },
+                                          "height": {
+                                            "type": "number"
+                                          },
+                                          "mime-type": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "url": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "rendered": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          }
+                                        },
+                                        "required": [
+                                          "file",
+                                          "width",
+                                          "height",
+                                          "mime-type",
+                                          "url",
+                                          "rendered"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "medium",
+                                      "large",
+                                      "thumbnail",
+                                      "medium_large",
+                                      "full"
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "width",
+                                  "height",
+                                  "file",
+                                  "sizes"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "title",
+                              "description",
+                              "caption",
+                              "alt",
+                              "rendered",
+                              "sizes",
+                              "srcset",
+                              "meta"
+                            ]
+                          },
+                          "links": {
+                            "type": "array",
+                            "uniqueItems": true,
+                            "minItems": 1,
+                            "items": {
+                              "required": [],
+                              "properties": {}
+                            }
+                          },
+                          "notes": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "synonyms": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "taxonomies": {
+                            "type": "object",
+                            "properties": {
+                              "openpub-audience": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "minItems": 1,
+                                "items": {
+                                  "required": [
+                                    "id",
+                                    "name",
+                                    "slug"
+                                  ],
+                                  "properties": {
+                                    "id": {
+                                      "type": "number"
+                                    },
+                                    "name": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "slug": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    }
+                                  }
+                                }
+                              },
+                              "openpub-type": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "minItems": 1,
+                                "items": {
+                                  "required": [
+                                    "id",
+                                    "name",
+                                    "slug"
+                                  ],
+                                  "properties": {
+                                    "id": {
+                                      "type": "number"
+                                    },
+                                    "name": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "slug": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    }
+                                  }
+                                }
+                              },
+                              "openpub-usage": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "minItems": 1,
+                                "items": {
+                                  "required": [
+                                    "id",
+                                    "name",
+                                    "slug"
+                                  ],
+                                  "properties": {
+                                    "id": {
+                                      "type": "number"
+                                    },
+                                    "name": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "slug": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    }
+                                  }
+                                }
+                              },
+                              "openpub-show-on": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "minItems": 1,
+                                "items": {
+                                  "required": [],
+                                  "properties": {}
+                                }
+                              }
+                            },
+                            "required": [
+                              "openpub-audience",
+                              "openpub-type",
+                              "openpub-usage",
+                              "openpub-show-on"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "Nieuws"
+                  ],
+                  "x-examples": {
+                    "example-1": {
+                      "Nieuws": [
+                        {
+                          "id": 0,
+                          "title": "string",
+                          "content": "string",
+                          "excerpt": "string",
+                          "date": "string",
+                          "slug": "string",
+                          "post_status": "string",
+                          "connected": {
+                            "openpub-item_to_openpub-theme": [
+                              {}
+                            ],
+                            "openpub-item_to_openpub-subtheme": [
+                              {}
+                            ],
+                            "openpub-item_to_openpub-location": [
+                              {}
+                            ],
+                            "openpub-item_to_openpub-item": [
+                              {}
+                            ]
+                          },
+                          "downloads": [
+                            {}
+                          ],
+                          "expired": {
+                            "message": "string",
+                            "status": true,
+                            "on": {
+                              "date": "string",
+                              "timezone_type": 0,
+                              "timezone": "string"
+                            }
+                          },
+                          "highlighted": true,
+                          "image": {
+                            "title": "string",
+                            "description": "string",
+                            "caption": "string",
+                            "alt": "string",
+                            "rendered": "string",
+                            "sizes": "string",
+                            "srcset": "string",
+                            "meta": {
+                              "width": 0,
+                              "height": 0,
+                              "file": "string",
+                              "sizes": {
+                                "medium": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "large": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "thumbnail": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "medium_large": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "full": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                }
+                              }
+                            }
+                          },
+                          "links": [
+                            {}
+                          ],
+                          "notes": "string",
+                          "synonyms": "string",
+                          "taxonomies": {
+                            "openpub-audience": [
+                              {
+                                "id": 0,
+                                "name": "string",
+                                "slug": "string"
+                              }
+                            ],
+                            "openpub-type": [
+                              {
+                                "id": 0,
+                                "name": "string",
+                                "slug": "string"
+                              }
+                            ],
+                            "openpub-usage": [
+                              {
+                                "id": 0,
+                                "name": "string",
+                                "slug": "string"
+                              }
+                            ],
+                            "openpub-show-on": [
+                              {}
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
                 },
-                "examples": {}
-              }
-            }
-          }
-        }
-      },
-      "post": {
-        "summary": "",
-        "operationId": "post-product",
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Product"
+                "examples": {
+                  "example-1": {
+                    "value": {
+                      "Nieuws": [
+                        {
+                          "id": 0,
+                          "title": "string",
+                          "content": "string",
+                          "excerpt": "string",
+                          "date": "string",
+                          "slug": "string",
+                          "post_status": "string",
+                          "connected": {
+                            "openpub-item_to_openpub-theme": [
+                              {}
+                            ],
+                            "openpub-item_to_openpub-subtheme": [
+                              {}
+                            ],
+                            "openpub-item_to_openpub-location": [
+                              {}
+                            ],
+                            "openpub-item_to_openpub-item": [
+                              {}
+                            ]
+                          },
+                          "downloads": [
+                            {}
+                          ],
+                          "expired": {
+                            "message": "string",
+                            "status": true,
+                            "on": {
+                              "date": "string",
+                              "timezone_type": 0,
+                              "timezone": "string"
+                            }
+                          },
+                          "highlighted": true,
+                          "image": {
+                            "title": "string",
+                            "description": "string",
+                            "caption": "string",
+                            "alt": "string",
+                            "rendered": "string",
+                            "sizes": "string",
+                            "srcset": "string",
+                            "meta": {
+                              "width": 0,
+                              "height": 0,
+                              "file": "string",
+                              "sizes": {
+                                "medium": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "large": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "thumbnail": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "medium_large": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "full": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                }
+                              }
+                            }
+                          },
+                          "links": [
+                            {}
+                          ],
+                          "notes": "string",
+                          "synonyms": "string",
+                          "taxonomies": {
+                            "openpub-audience": [
+                              {
+                                "id": 0,
+                                "name": "string",
+                                "slug": "string"
+                              }
+                            ],
+                            "openpub-type": [
+                              {
+                                "id": 0,
+                                "name": "string",
+                                "slug": "string"
+                              }
+                            ],
+                            "openpub-usage": [
+                              {
+                                "id": 0,
+                                "name": "string",
+                                "slug": "string"
+                              }
+                            ],
+                            "openpub-show-on": [
+                              {}
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
                 }
               }
             }
+          }
+        },
+        "description": "Vraag alle nieuwsberichten op."
+      },
+      "post": {
+        "summary": "",
+        "operationId": "post-nieuws",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "",
+                  "type": "object",
+                  "x-examples": {
+                    "example-1": {
+                      "Nieuws": [
+                        {
+                          "id": 7367,
+                          "title": "Voorbelasten bouwlocatie de Teisterbant",
+                          "content": "<p>In de loop van 2022 start de bouw van 55 woningen in Kerk-Avezaath. Dit gebeurt aan de noordkant van het dorp.</p>\n<p>Voordat er kan worden gebouwd, moet de grond eerst worden voorbelast. Voorbelast betekent dat de grond bouwrijp gemaakt wordt. Door het voorbelasten wordt de grond verdicht en wordt de zetting (verzakking) van de grond versneld. Hiervoor wordt op de bouwlocatie een pakket van ongeveer één meter schoon zand aangebracht. Dit zand blijft een half jaar liggen.</p>\n<p>De vrachtwagens rijden de volgende routes:</p>\n<ul>\n<li>Via de Woerd, Dorpsstraat en Achterstraat wordt het zand aangevoerd door de vrachtwagens.</li>\n<li>De vrachtwagens rijden via de Achterstraat, Dorpsstraat, Noordereind en Burensedijk weer terug.</li>\n</ul>\n<p>Bij de keuze van de routes hebben we zoveel mogelijk rekening gehouden met de verkeersveiligheid en verkeersoverlast. De aanvoer van het zand start op 13 april 2022 en duurt ongeveer drie weken.</p>\n<p>Deze werkzaamheden zijn dus niet de bouwwerkzaamheden, maar de voorbereiding daarop.<br />\nOver de bouwwerkzaamheden informeren we u later. Heeft u vragen? Neem contact op met de heer R. Melis via het telefoonnummer 06 54 38 22 36.</p>\n",
+                          "excerpt": "",
+                          "date": "2022-04-12 11:22:03",
+                          "slug": "voorbelasten-bouwlocatie-de-teisterbant",
+                          "post_status": "publish",
+                          "connected": {
+                            "openpub-item_to_openpub-theme": [],
+                            "openpub-item_to_openpub-subtheme": [],
+                            "openpub-item_to_openpub-location": [],
+                            "openpub-item_to_openpub-item": []
+                          },
+                          "downloads": [],
+                          "expired": {
+                            "message": "",
+                            "status": false,
+                            "on": {
+                              "date": "2022-05-15 00:00:00.000000",
+                              "timezone_type": 3,
+                              "timezone": "Europe/Amsterdam"
+                            }
+                          },
+                          "highlighted": false,
+                          "image": {
+                            "title": "bandensporen",
+                            "description": "",
+                            "caption": "",
+                            "alt": "",
+                            "rendered": "<img width=\"1024\" height=\"576\" src=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg\" class=\"attachment-large size-large\" alt=\"\" loading=\"lazy\" srcset=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg 1024w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg 300w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg 768w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg 1280w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" />",
+                            "sizes": "(max-width: 1024px) 100vw, 1024px",
+                            "srcset": "https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg 1024w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg 300w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg 768w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg 1280w",
+                            "meta": {
+                              "width": 1280,
+                              "height": 720,
+                              "file": "2022/04/bandensporen-e1649755297420.jpg",
+                              "sizes": {
+                                "medium": {
+                                  "file": "bandensporen-e1649755297420-300x169.jpg",
+                                  "width": 300,
+                                  "height": 169,
+                                  "mime-type": "image/jpeg",
+                                  "url": "https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg",
+                                  "rendered": "<img width=\"300\" height=\"169\" src=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg\" class=\"attachment-medium size-medium\" alt=\"\" loading=\"lazy\" srcset=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg 300w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg 1024w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg 768w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg 1280w\" sizes=\"(max-width: 300px) 100vw, 300px\" />"
+                                },
+                                "large": {
+                                  "file": "bandensporen-e1649755297420-1024x576.jpg",
+                                  "width": 1024,
+                                  "height": 576,
+                                  "mime-type": "image/jpeg",
+                                  "url": "https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg",
+                                  "rendered": "<img width=\"1024\" height=\"576\" src=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg\" class=\"attachment-large size-large\" alt=\"\" loading=\"lazy\" srcset=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg 1024w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg 300w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg 768w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg 1280w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" />"
+                                },
+                                "thumbnail": {
+                                  "file": "bandensporen-e1649755297420-150x150.jpg",
+                                  "width": 150,
+                                  "height": 150,
+                                  "mime-type": "image/jpeg",
+                                  "url": "https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-150x150.jpg",
+                                  "rendered": "<img width=\"150\" height=\"150\" src=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-150x150.jpg\" class=\"attachment-thumbnail size-thumbnail\" alt=\"\" loading=\"lazy\" />"
+                                },
+                                "medium_large": {
+                                  "file": "bandensporen-e1649755297420-768x432.jpg",
+                                  "width": 768,
+                                  "height": 432,
+                                  "mime-type": "image/jpeg",
+                                  "url": "https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg",
+                                  "rendered": "<img width=\"768\" height=\"432\" src=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg\" class=\"attachment-medium_large size-medium_large\" alt=\"\" loading=\"lazy\" srcset=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg 768w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg 300w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg 1024w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg 1280w\" sizes=\"(max-width: 768px) 100vw, 768px\" />"
+                                },
+                                "full": {
+                                  "file": "bandensporen-e1649755297420.jpg",
+                                  "width": 1280,
+                                  "height": 720,
+                                  "mime-type": "image/jpeg",
+                                  "url": "https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg",
+                                  "rendered": "<img width=\"1280\" height=\"720\" src=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg\" class=\"attachment-full size-full\" alt=\"\" loading=\"lazy\" srcset=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg 1280w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg 300w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg 1024w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg 768w\" sizes=\"(max-width: 1280px) 100vw, 1280px\" />"
+                                }
+                              }
+                            }
+                          },
+                          "links": [],
+                          "notes": "",
+                          "synonyms": "",
+                          "taxonomies": {
+                            "openpub-audience": [
+                              {
+                                "id": 2,
+                                "name": "Inwoners",
+                                "slug": "inwoners"
+                              }
+                            ],
+                            "openpub-type": [
+                              {
+                                "id": 22,
+                                "name": "Algemeen",
+                                "slug": "algemeen"
+                              }
+                            ],
+                            "openpub-usage": [
+                              {
+                                "id": 8,
+                                "name": "Portal",
+                                "slug": "website-gemeente"
+                              }
+                            ],
+                            "openpub-show-on": []
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "properties": {
+                    "Nieuws": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "number"
+                          },
+                          "title": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "content": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "excerpt": {
+                            "type": "string"
+                          },
+                          "date": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "slug": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "post_status": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "connected": {
+                            "type": "object",
+                            "properties": {
+                              "openpub-item_to_openpub-theme": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object"
+                                }
+                              },
+                              "openpub-item_to_openpub-subtheme": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object"
+                                }
+                              },
+                              "openpub-item_to_openpub-location": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object"
+                                }
+                              },
+                              "openpub-item_to_openpub-item": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object"
+                                }
+                              }
+                            },
+                            "required": [
+                              "openpub-item_to_openpub-theme",
+                              "openpub-item_to_openpub-subtheme",
+                              "openpub-item_to_openpub-location",
+                              "openpub-item_to_openpub-item"
+                            ]
+                          },
+                          "downloads": {
+                            "type": "array",
+                            "items": {
+                              "type": "object"
+                            }
+                          },
+                          "expired": {
+                            "type": "object",
+                            "properties": {
+                              "message": {
+                                "type": "string"
+                              },
+                              "status": {
+                                "type": "boolean",
+                                "default": false
+                              },
+                              "on": {
+                                "type": "object",
+                                "required": [
+                                  "date",
+                                  "timezone_type",
+                                  "timezone"
+                                ],
+                                "properties": {
+                                  "date": {
+                                    "type": "string",
+                                    "minLength": 1
+                                  },
+                                  "timezone_type": {
+                                    "type": "number"
+                                  },
+                                  "timezone": {
+                                    "type": "string",
+                                    "minLength": 1
+                                  }
+                                }
+                              }
+                            },
+                            "required": [
+                              "message",
+                              "status",
+                              "on"
+                            ]
+                          },
+                          "highlighted": {
+                            "type": "boolean",
+                            "default": false
+                          },
+                          "image": {
+                            "type": "object",
+                            "properties": {
+                              "title": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "description": {
+                                "type": "string"
+                              },
+                              "caption": {
+                                "type": "string"
+                              },
+                              "alt": {
+                                "type": "string"
+                              },
+                              "rendered": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "sizes": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "srcset": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "meta": {
+                                "type": "object",
+                                "required": [
+                                  "width",
+                                  "height",
+                                  "file",
+                                  "sizes"
+                                ],
+                                "properties": {
+                                  "width": {
+                                    "type": "number"
+                                  },
+                                  "height": {
+                                    "type": "number"
+                                  },
+                                  "file": {
+                                    "type": "string",
+                                    "minLength": 1
+                                  },
+                                  "sizes": {
+                                    "type": "object",
+                                    "required": [
+                                      "medium",
+                                      "large",
+                                      "thumbnail",
+                                      "medium_large",
+                                      "full"
+                                    ],
+                                    "properties": {
+                                      "medium": {
+                                        "type": "object",
+                                        "required": [
+                                          "file",
+                                          "width",
+                                          "height",
+                                          "mime-type",
+                                          "url",
+                                          "rendered"
+                                        ],
+                                        "properties": {
+                                          "file": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "width": {
+                                            "type": "number"
+                                          },
+                                          "height": {
+                                            "type": "number"
+                                          },
+                                          "mime-type": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "url": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "rendered": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          }
+                                        }
+                                      },
+                                      "large": {
+                                        "type": "object",
+                                        "required": [
+                                          "file",
+                                          "width",
+                                          "height",
+                                          "mime-type",
+                                          "url",
+                                          "rendered"
+                                        ],
+                                        "properties": {
+                                          "file": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "width": {
+                                            "type": "number"
+                                          },
+                                          "height": {
+                                            "type": "number"
+                                          },
+                                          "mime-type": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "url": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "rendered": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          }
+                                        }
+                                      },
+                                      "thumbnail": {
+                                        "type": "object",
+                                        "required": [
+                                          "file",
+                                          "width",
+                                          "height",
+                                          "mime-type",
+                                          "url",
+                                          "rendered"
+                                        ],
+                                        "properties": {
+                                          "file": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "width": {
+                                            "type": "number"
+                                          },
+                                          "height": {
+                                            "type": "number"
+                                          },
+                                          "mime-type": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "url": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "rendered": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          }
+                                        }
+                                      },
+                                      "medium_large": {
+                                        "type": "object",
+                                        "required": [
+                                          "file",
+                                          "width",
+                                          "height",
+                                          "mime-type",
+                                          "url",
+                                          "rendered"
+                                        ],
+                                        "properties": {
+                                          "file": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "width": {
+                                            "type": "number"
+                                          },
+                                          "height": {
+                                            "type": "number"
+                                          },
+                                          "mime-type": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "url": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "rendered": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          }
+                                        }
+                                      },
+                                      "full": {
+                                        "type": "object",
+                                        "required": [
+                                          "file",
+                                          "width",
+                                          "height",
+                                          "mime-type",
+                                          "url",
+                                          "rendered"
+                                        ],
+                                        "properties": {
+                                          "file": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "width": {
+                                            "type": "number"
+                                          },
+                                          "height": {
+                                            "type": "number"
+                                          },
+                                          "mime-type": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "url": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "rendered": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "required": [
+                              "title",
+                              "description",
+                              "caption",
+                              "alt",
+                              "rendered",
+                              "sizes",
+                              "srcset",
+                              "meta"
+                            ]
+                          },
+                          "links": {
+                            "type": "array",
+                            "items": {
+                              "type": "object"
+                            }
+                          },
+                          "notes": {
+                            "type": "string"
+                          },
+                          "synonyms": {
+                            "type": "string"
+                          },
+                          "taxonomies": {
+                            "type": "object",
+                            "properties": {
+                              "openpub-audience": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "minItems": 1,
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "number"
+                                    },
+                                    "name": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "slug": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    }
+                                  },
+                                  "required": [
+                                    "id",
+                                    "name",
+                                    "slug"
+                                  ]
+                                }
+                              },
+                              "openpub-type": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "minItems": 1,
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "number"
+                                    },
+                                    "name": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "slug": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    }
+                                  },
+                                  "required": [
+                                    "id",
+                                    "name",
+                                    "slug"
+                                  ]
+                                }
+                              },
+                              "openpub-usage": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "minItems": 1,
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "number"
+                                    },
+                                    "name": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "slug": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    }
+                                  },
+                                  "required": [
+                                    "id",
+                                    "name",
+                                    "slug"
+                                  ]
+                                }
+                              },
+                              "openpub-show-on": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object"
+                                }
+                              }
+                            },
+                            "required": [
+                              "openpub-audience",
+                              "openpub-type",
+                              "openpub-usage",
+                              "openpub-show-on"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "title",
+                          "content",
+                          "excerpt",
+                          "date",
+                          "slug",
+                          "post_status",
+                          "highlighted",
+                          "notes",
+                          "synonyms"
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "Nieuws"
+                  ]
+                },
+                "examples": {
+                  "example-1": {
+                    "value": {
+                      "Nieuws": [
+                        {
+                          "id": 0,
+                          "title": "string",
+                          "content": "string",
+                          "excerpt": "string",
+                          "date": "string",
+                          "slug": "string",
+                          "post_status": "string",
+                          "connected": {
+                            "openpub-item_to_openpub-theme": [
+                              {}
+                            ],
+                            "openpub-item_to_openpub-subtheme": [
+                              {}
+                            ],
+                            "openpub-item_to_openpub-location": [
+                              {}
+                            ],
+                            "openpub-item_to_openpub-item": [
+                              {}
+                            ]
+                          },
+                          "downloads": [
+                            {}
+                          ],
+                          "expired": {
+                            "message": "string",
+                            "status": false,
+                            "on": {
+                              "date": "string",
+                              "timezone_type": 0,
+                              "timezone": "string"
+                            }
+                          },
+                          "highlighted": false,
+                          "image": {
+                            "title": "string",
+                            "description": "string",
+                            "caption": "string",
+                            "alt": "string",
+                            "rendered": "string",
+                            "sizes": "string",
+                            "srcset": "string",
+                            "meta": {
+                              "width": 0,
+                              "height": 0,
+                              "file": "string",
+                              "sizes": {
+                                "medium": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "large": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "thumbnail": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "medium_large": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "full": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                }
+                              }
+                            }
+                          },
+                          "links": [
+                            {}
+                          ],
+                          "notes": "string",
+                          "synonyms": "string",
+                          "taxonomies": {
+                            "openpub-audience": [
+                              {
+                                "id": 0,
+                                "name": "string",
+                                "slug": "string"
+                              }
+                            ],
+                            "openpub-type": [
+                              {
+                                "id": 0,
+                                "name": "string",
+                                "slug": "string"
+                              }
+                            ],
+                            "openpub-usage": [
+                              {
+                                "id": 0,
+                                "name": "string",
+                                "slug": "string"
+                              }
+                            ],
+                            "openpub-show-on": [
+                              {}
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "headers": {}
           }
         },
         "parameters": [
@@ -46,16 +1558,15 @@
               "type": "string"
             },
             "in": "header",
+            "required": true,
             "name": "Content-type",
-            "description": "Content type van de verzoekinhoud.",
-            "required": true
+            "description": "Content type van de verzoekinhoud."
           }
         ],
-        "description": "Maak een product aan"
-      },
-      "parameters": []
+        "description": "Maak een nieuwsbericht aan."
+      }
     },
-    "/products/{id}": {
+    "/nieuws/{id}": {
       "parameters": [
         {
           "schema": {
@@ -63,8 +1574,8 @@
           },
           "name": "id",
           "in": "path",
-          "description": "Unieke ID",
-          "required": true
+          "required": true,
+          "description": "Unieke ID"
         }
       ],
       "get": {
@@ -76,58 +1587,916 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Product"
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "Nieuws": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "required": [
+                          "id",
+                          "title",
+                          "content",
+                          "excerpt",
+                          "date",
+                          "slug",
+                          "post_status",
+                          "highlighted",
+                          "notes",
+                          "synonyms"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "number"
+                          },
+                          "title": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "content": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "excerpt": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "date": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "slug": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "post_status": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "connected": {
+                            "type": "object",
+                            "properties": {
+                              "openpub-item_to_openpub-theme": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "minItems": 1,
+                                "items": {
+                                  "required": [],
+                                  "properties": {}
+                                }
+                              },
+                              "openpub-item_to_openpub-subtheme": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "minItems": 1,
+                                "items": {
+                                  "required": [],
+                                  "properties": {}
+                                }
+                              },
+                              "openpub-item_to_openpub-location": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "minItems": 1,
+                                "items": {
+                                  "required": [],
+                                  "properties": {}
+                                }
+                              },
+                              "openpub-item_to_openpub-item": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "minItems": 1,
+                                "items": {
+                                  "required": [],
+                                  "properties": {}
+                                }
+                              }
+                            },
+                            "required": [
+                              "openpub-item_to_openpub-theme",
+                              "openpub-item_to_openpub-subtheme",
+                              "openpub-item_to_openpub-location",
+                              "openpub-item_to_openpub-item"
+                            ]
+                          },
+                          "downloads": {
+                            "type": "array",
+                            "uniqueItems": true,
+                            "minItems": 1,
+                            "items": {
+                              "required": [],
+                              "properties": {}
+                            }
+                          },
+                          "expired": {
+                            "type": "object",
+                            "properties": {
+                              "message": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "status": {
+                                "type": "boolean"
+                              },
+                              "on": {
+                                "type": "object",
+                                "properties": {
+                                  "date": {
+                                    "type": "string",
+                                    "minLength": 1
+                                  },
+                                  "timezone_type": {
+                                    "type": "number"
+                                  },
+                                  "timezone": {
+                                    "type": "string",
+                                    "minLength": 1
+                                  }
+                                },
+                                "required": [
+                                  "date",
+                                  "timezone_type",
+                                  "timezone"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "message",
+                              "status",
+                              "on"
+                            ]
+                          },
+                          "highlighted": {
+                            "type": "boolean"
+                          },
+                          "image": {
+                            "type": "object",
+                            "properties": {
+                              "title": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "description": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "caption": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "alt": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "rendered": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "sizes": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "srcset": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "meta": {
+                                "type": "object",
+                                "properties": {
+                                  "width": {
+                                    "type": "number"
+                                  },
+                                  "height": {
+                                    "type": "number"
+                                  },
+                                  "file": {
+                                    "type": "string",
+                                    "minLength": 1
+                                  },
+                                  "sizes": {
+                                    "type": "object",
+                                    "properties": {
+                                      "medium": {
+                                        "type": "object",
+                                        "properties": {
+                                          "file": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "width": {
+                                            "type": "number"
+                                          },
+                                          "height": {
+                                            "type": "number"
+                                          },
+                                          "mime-type": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "url": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "rendered": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          }
+                                        },
+                                        "required": [
+                                          "file",
+                                          "width",
+                                          "height",
+                                          "mime-type",
+                                          "url",
+                                          "rendered"
+                                        ]
+                                      },
+                                      "large": {
+                                        "type": "object",
+                                        "properties": {
+                                          "file": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "width": {
+                                            "type": "number"
+                                          },
+                                          "height": {
+                                            "type": "number"
+                                          },
+                                          "mime-type": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "url": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "rendered": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          }
+                                        },
+                                        "required": [
+                                          "file",
+                                          "width",
+                                          "height",
+                                          "mime-type",
+                                          "url",
+                                          "rendered"
+                                        ]
+                                      },
+                                      "thumbnail": {
+                                        "type": "object",
+                                        "properties": {
+                                          "file": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "width": {
+                                            "type": "number"
+                                          },
+                                          "height": {
+                                            "type": "number"
+                                          },
+                                          "mime-type": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "url": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "rendered": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          }
+                                        },
+                                        "required": [
+                                          "file",
+                                          "width",
+                                          "height",
+                                          "mime-type",
+                                          "url",
+                                          "rendered"
+                                        ]
+                                      },
+                                      "medium_large": {
+                                        "type": "object",
+                                        "properties": {
+                                          "file": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "width": {
+                                            "type": "number"
+                                          },
+                                          "height": {
+                                            "type": "number"
+                                          },
+                                          "mime-type": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "url": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "rendered": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          }
+                                        },
+                                        "required": [
+                                          "file",
+                                          "width",
+                                          "height",
+                                          "mime-type",
+                                          "url",
+                                          "rendered"
+                                        ]
+                                      },
+                                      "full": {
+                                        "type": "object",
+                                        "properties": {
+                                          "file": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "width": {
+                                            "type": "number"
+                                          },
+                                          "height": {
+                                            "type": "number"
+                                          },
+                                          "mime-type": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "url": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          },
+                                          "rendered": {
+                                            "type": "string",
+                                            "minLength": 1
+                                          }
+                                        },
+                                        "required": [
+                                          "file",
+                                          "width",
+                                          "height",
+                                          "mime-type",
+                                          "url",
+                                          "rendered"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "medium",
+                                      "large",
+                                      "thumbnail",
+                                      "medium_large",
+                                      "full"
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "width",
+                                  "height",
+                                  "file",
+                                  "sizes"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "title",
+                              "description",
+                              "caption",
+                              "alt",
+                              "rendered",
+                              "sizes",
+                              "srcset",
+                              "meta"
+                            ]
+                          },
+                          "links": {
+                            "type": "array",
+                            "uniqueItems": true,
+                            "minItems": 1,
+                            "items": {
+                              "required": [],
+                              "properties": {}
+                            }
+                          },
+                          "notes": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "synonyms": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "taxonomies": {
+                            "type": "object",
+                            "properties": {
+                              "openpub-audience": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "minItems": 1,
+                                "items": {
+                                  "required": [
+                                    "id",
+                                    "name",
+                                    "slug"
+                                  ],
+                                  "properties": {
+                                    "id": {
+                                      "type": "number"
+                                    },
+                                    "name": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "slug": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    }
+                                  }
+                                }
+                              },
+                              "openpub-type": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "minItems": 1,
+                                "items": {
+                                  "required": [
+                                    "id",
+                                    "name",
+                                    "slug"
+                                  ],
+                                  "properties": {
+                                    "id": {
+                                      "type": "number"
+                                    },
+                                    "name": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "slug": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    }
+                                  }
+                                }
+                              },
+                              "openpub-usage": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "minItems": 1,
+                                "items": {
+                                  "required": [
+                                    "id",
+                                    "name",
+                                    "slug"
+                                  ],
+                                  "properties": {
+                                    "id": {
+                                      "type": "number"
+                                    },
+                                    "name": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "slug": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    }
+                                  }
+                                }
+                              },
+                              "openpub-show-on": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "minItems": 1,
+                                "items": {
+                                  "required": [],
+                                  "properties": {}
+                                }
+                              }
+                            },
+                            "required": [
+                              "openpub-audience",
+                              "openpub-type",
+                              "openpub-usage",
+                              "openpub-show-on"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "Nieuws"
+                  ],
+                  "x-examples": {
+                    "example-1": {
+                      "Nieuws": [
+                        {
+                          "id": 0,
+                          "title": "string",
+                          "content": "string",
+                          "excerpt": "string",
+                          "date": "string",
+                          "slug": "string",
+                          "post_status": "string",
+                          "connected": {
+                            "openpub-item_to_openpub-theme": [
+                              {}
+                            ],
+                            "openpub-item_to_openpub-subtheme": [
+                              {}
+                            ],
+                            "openpub-item_to_openpub-location": [
+                              {}
+                            ],
+                            "openpub-item_to_openpub-item": [
+                              {}
+                            ]
+                          },
+                          "downloads": [
+                            {}
+                          ],
+                          "expired": {
+                            "message": "string",
+                            "status": true,
+                            "on": {
+                              "date": "string",
+                              "timezone_type": 0,
+                              "timezone": "string"
+                            }
+                          },
+                          "highlighted": true,
+                          "image": {
+                            "title": "string",
+                            "description": "string",
+                            "caption": "string",
+                            "alt": "string",
+                            "rendered": "string",
+                            "sizes": "string",
+                            "srcset": "string",
+                            "meta": {
+                              "width": 0,
+                              "height": 0,
+                              "file": "string",
+                              "sizes": {
+                                "medium": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "large": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "thumbnail": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "medium_large": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "full": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                }
+                              }
+                            }
+                          },
+                          "links": [
+                            {}
+                          ],
+                          "notes": "string",
+                          "synonyms": "string",
+                          "taxonomies": {
+                            "openpub-audience": [
+                              {
+                                "id": 0,
+                                "name": "string",
+                                "slug": "string"
+                              }
+                            ],
+                            "openpub-type": [
+                              {
+                                "id": 0,
+                                "name": "string",
+                                "slug": "string"
+                              }
+                            ],
+                            "openpub-usage": [
+                              {
+                                "id": 0,
+                                "name": "string",
+                                "slug": "string"
+                              }
+                            ],
+                            "openpub-show-on": [
+                              {}
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                "examples": {
+                  "example-1": {
+                    "value": {
+                      "Nieuws": [
+                        {
+                          "id": 0,
+                          "title": "string",
+                          "content": "string",
+                          "excerpt": "string",
+                          "date": "string",
+                          "slug": "string",
+                          "post_status": "string",
+                          "connected": {
+                            "openpub-item_to_openpub-theme": [
+                              {}
+                            ],
+                            "openpub-item_to_openpub-subtheme": [
+                              {}
+                            ],
+                            "openpub-item_to_openpub-location": [
+                              {}
+                            ],
+                            "openpub-item_to_openpub-item": [
+                              {}
+                            ]
+                          },
+                          "downloads": [
+                            {}
+                          ],
+                          "expired": {
+                            "message": "string",
+                            "status": true,
+                            "on": {
+                              "date": "string",
+                              "timezone_type": 0,
+                              "timezone": "string"
+                            }
+                          },
+                          "highlighted": true,
+                          "image": {
+                            "title": "string",
+                            "description": "string",
+                            "caption": "string",
+                            "alt": "string",
+                            "rendered": "string",
+                            "sizes": "string",
+                            "srcset": "string",
+                            "meta": {
+                              "width": 0,
+                              "height": 0,
+                              "file": "string",
+                              "sizes": {
+                                "medium": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "large": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "thumbnail": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "medium_large": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "full": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                }
+                              }
+                            }
+                          },
+                          "links": [
+                            {}
+                          ],
+                          "notes": "string",
+                          "synonyms": "string",
+                          "taxonomies": {
+                            "openpub-audience": [
+                              {
+                                "id": 0,
+                                "name": "string",
+                                "slug": "string"
+                              }
+                            ],
+                            "openpub-type": [
+                              {
+                                "id": 0,
+                                "name": "string",
+                                "slug": "string"
+                              }
+                            ],
+                            "openpub-usage": [
+                              {
+                                "id": 0,
+                                "name": "string",
+                                "slug": "string"
+                              }
+                            ],
+                            "openpub-show-on": [
+                              {}
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
                 }
               }
             }
           }
         },
-        "operationId": "get-product-id",
-        "description": "Een specifiek product opvragen"
+        "operationId": "get-nieuws-id",
+        "parameters": [],
+        "description": "Een specifiek nieuwsbericht opvragen."
       },
       "put": {
         "summary": "",
-        "operationId": "put-product-id",
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Product"
-                }
-              }
-            }
-          }
-        },
-        "description": "Een specifiek product updaten"
-      },
-      "delete": {
-        "summary": "",
-        "operationId": "delete-product-id",
+        "operationId": "put-nieuws-id",
         "responses": {
           "200": {
             "description": "OK"
           }
         },
-        "description": "Een specifiek product verwijderen"
+        "description": "Update een specifiek nieuwsbericht."
+      },
+      "delete": {
+        "summary": "",
+        "operationId": "delete-nieuws-id",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "description": "Delete een specifiek nieuwsbericht."
       }
     }
   },
   "components": {
     "schemas": {
-      "Product": {
-        "title": "Product",
+      "Nieuws": {
+        "title": "Nieuws",
         "type": "object",
+        "examples": [
+          {
+            "id": "string",
+            "title": "string",
+            "content": "string",
+            "excerpt": "string",
+            "date": "2019-08-24",
+            "slug": "string",
+            "post-status": "string",
+            "connected": {
+              "openpub-item_to_theme": [
+                null
+              ],
+              "openpub-item_to_openpub-subtheme": [
+                null
+              ],
+              "openpub-item_to_openpub-location": [
+                null
+              ],
+              "openpub-item_to_openpub-item": [
+                null
+              ]
+            },
+            "downloads": [
+              null
+            ],
+            "expired": {
+              "message": "string",
+              "status": true,
+              "on": {
+                "date": "2019-08-24",
+                "timezone_type": 0,
+                "timezone": "string"
+              }
+            },
+            "highlighted": true,
+            "image": {
+              "title": "string",
+              "description": "string",
+              "caption": "string",
+              "alt": "string",
+              "rendered": "string",
+              "sizes": "string",
+              "srcset": "string",
+              "meta": {
+                "width": 0,
+                "height": 0,
+                "file": "string",
+                "sizes": {
+                  "medium": {
+                    "file": "string",
+                    "width": 0,
+                    "height": 0,
+                    "mime-type": "string",
+                    "url": "string",
+                    "rendered": "string"
+                  },
+                  "large": {
+                    "file": "string",
+                    "width": 0,
+                    "height": 0,
+                    "mime-type": "string",
+                    "url": "string",
+                    "rendered": "string"
+                  },
+                  "thumbnail": {
+                    "file": "string",
+                    "width": 0,
+                    "height": 0,
+                    "mime-type": "string",
+                    "url": "string",
+                    "rendered": "string"
+                  },
+                  "medium_large": {
+                    "file": "string",
+                    "width": 0,
+                    "height": 0,
+                    "mime-type": "string",
+                    "url": "string",
+                    "rendered": "string"
+                  },
+                  "full": {
+                    "file": "string",
+                    "width": 0,
+                    "height": 0,
+                    "mime-type": "string",
+                    "url": "string",
+                    "rendered": "string"
+                  }
+                }
+              }
+            }
+          }
+        ],
         "properties": {
           "id": {
             "type": "string"
           },
           "title": {
-            "type": "string",
-            "maxLength": 255
-          },
-          "slug": {
             "type": "string",
             "maxLength": 255
           },
@@ -141,47 +2510,269 @@
             "type": "string",
             "format": "date"
           },
-          "post_status": {
-            "type": "string",
-            "maxLength": 15
+          "slug": {
+            "type": "string"
           },
-          "protected": {
-            "type": "boolean"
+          "post-status": {
+            "type": "string"
           },
-          "appointment": {
+          "connected": {
             "type": "object",
             "properties": {
-              "active": {
-                "type": "boolean"
+              "openpub-item_to_theme": {
+                "type": "array",
+                "items": {}
+              },
+              "openpub-item_to_openpub-subtheme": {
+                "type": "array",
+                "items": {}
+              },
+              "openpub-item_to_openpub-location": {
+                "type": "array",
+                "items": {}
+              },
+              "openpub-item_to_openpub-item": {
+                "type": "array",
+                "items": {}
               }
             }
           },
-          "download": {
+          "downloads": {
             "type": "array",
             "items": {}
           },
-          "faq": {
-            "type": "array",
-            "items": {}
+          "expired": {
+            "type": "object",
+            "properties": {
+              "message": {
+                "type": "string"
+              },
+              "status": {
+                "type": "boolean"
+              },
+              "on": {
+                "type": "object",
+                "properties": {
+                  "date": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "timezone_type": {
+                    "type": "integer"
+                  },
+                  "timezone": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
           },
-          "forms": {
-            "type": "array",
-            "items": {}
+          "highlighted": {
+            "type": "boolean"
           },
           "image": {
-            "type": "array",
-            "items": {}
-          },
-          "language": {
-            "type": "string"
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "alt": {
+                "type": "string"
+              },
+              "rendered": {
+                "type": "string"
+              },
+              "sizes": {
+                "type": "string"
+              },
+              "srcset": {
+                "type": "string"
+              },
+              "meta": {
+                "type": "object",
+                "properties": {
+                  "width": {
+                    "type": [
+                      "number",
+                      "integer"
+                    ]
+                  },
+                  "height": {
+                    "type": [
+                      "number",
+                      "integer"
+                    ]
+                  },
+                  "file": {
+                    "type": "string",
+                    "maxLength": 25
+                  },
+                  "sizes": {
+                    "type": "object",
+                    "properties": {
+                      "medium": {
+                        "type": "object",
+                        "properties": {
+                          "file": {
+                            "type": "string"
+                          },
+                          "width": {
+                            "type": [
+                              "number",
+                              "integer"
+                            ]
+                          },
+                          "height": {
+                            "type": [
+                              "number",
+                              "integer"
+                            ]
+                          },
+                          "mime-type": {
+                            "type": "string"
+                          },
+                          "url": {
+                            "type": "string"
+                          },
+                          "rendered": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "large": {
+                        "type": "object",
+                        "properties": {
+                          "file": {
+                            "type": "string"
+                          },
+                          "width": {
+                            "type": [
+                              "number",
+                              "integer"
+                            ]
+                          },
+                          "height": {
+                            "type": [
+                              "number",
+                              "integer"
+                            ]
+                          },
+                          "mime-type": {
+                            "type": "string"
+                          },
+                          "url": {
+                            "type": "string"
+                          },
+                          "rendered": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "thumbnail": {
+                        "type": "object",
+                        "properties": {
+                          "file": {
+                            "type": "string"
+                          },
+                          "width": {
+                            "type": [
+                              "number",
+                              "integer"
+                            ]
+                          },
+                          "height": {
+                            "type": [
+                              "number",
+                              "integer"
+                            ]
+                          },
+                          "mime-type": {
+                            "type": "string"
+                          },
+                          "url": {
+                            "type": "string"
+                          },
+                          "rendered": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "medium_large": {
+                        "type": "object",
+                        "properties": {
+                          "file": {
+                            "type": "string"
+                          },
+                          "width": {
+                            "type": [
+                              "number",
+                              "integer"
+                            ]
+                          },
+                          "height": {
+                            "type": [
+                              "number",
+                              "integer"
+                            ]
+                          },
+                          "mime-type": {
+                            "type": "string"
+                          },
+                          "url": {
+                            "type": "string"
+                          },
+                          "rendered": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "full": {
+                        "type": "object",
+                        "properties": {
+                          "file": {
+                            "type": "string"
+                          },
+                          "width": {
+                            "type": [
+                              "number",
+                              "integer"
+                            ]
+                          },
+                          "height": {
+                            "type": [
+                              "number",
+                              "integer"
+                            ]
+                          },
+                          "mime-type": {
+                            "type": "string"
+                          },
+                          "url": {
+                            "type": "string"
+                          },
+                          "rendered": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
           },
           "links": {
             "type": "array",
             "items": {}
           },
-          "locations": {
-            "type": "array",
-            "items": {}
+          "notes": {
+            "type": "string"
           },
           "synonyms": {
             "type": "string"
@@ -189,24 +2780,7 @@
           "taxonomies": {
             "type": "object",
             "properties": {
-              "pdc-doelgroep": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "number"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "slug": {
-                      "type": "string"
-                    }
-                  }
-                }
-              },
-              "pdc-type": {
+              "openpub-audience": {
                 "type": "array",
                 "items": {
                   "type": "object",
@@ -223,183 +2797,53 @@
                   }
                 }
               },
-              "pdc-aspect": {
+              "openpub-type": {
                 "type": "array",
-                "items": {}
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "slug": {
+                      "type": "string"
+                    }
+                  }
+                }
               },
-              "pdc-usage": {
+              "openpub-usage": {
                 "type": "array",
-                "items": {}
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "slug": {
+                      "type": "string"
+                    }
+                  }
+                }
               },
-              "pdc-owner": {
+              "openpub-show-on": {
                 "type": "array",
                 "items": {}
               }
             }
-          },
-          "title-alternative": {
-            "type": "string"
           }
-        },
-        "required": [
-          "title"
-        ],
-        "description": "Product from the PDS API",
-        "examples": [
-          {
-            "id": "string",
-            "title": "string",
-            "slug": "string",
-            "content": "string",
-            "excerpt": "string",
-            "date": "2019-08-24",
-            "post_status": "string",
-            "protected": true,
-            "appointment": {
-              "active": true
-            },
-            "download": [
-              null
-            ],
-            "faq": [
-              null
-            ],
-            "forms": [
-              null
-            ],
-            "image": [
-              null
-            ],
-            "language": "string",
-            "links": [
-              null
-            ],
-            "locations": [
-              null
-            ],
-            "synonyms": "string",
-            "taxonomies": {
-              "pdc-doelgroep": [
-                {
-                  "id": 0,
-                  "name": "string",
-                  "slug": "string"
-                }
-              ],
-              "pdc-type": [
-                {
-                  "id": "string",
-                  "name": "string",
-                  "slug": "string"
-                }
-              ],
-              "pdc-aspect": [
-                null
-              ],
-              "pdc-usage": [
-                null
-              ],
-              "pdc-owner": [
-                null
-              ]
-            },
-            "title-alternative": "string"
-          },
-          {
-            "id": "string",
-            "title": "string",
-            "slug": "string",
-            "content": "string",
-            "excerpt": "string",
-            "date": "2019-08-24",
-            "post_status": "string",
-            "protected": true,
-            "appointment": {
-              "active": true
-            },
-            "download": [
-              null
-            ],
-            "faq": [
-              null
-            ],
-            "forms": [
-              null
-            ],
-            "image": [
-              null
-            ],
-            "language": "string",
-            "links": [
-              null
-            ],
-            "locations": [
-              null
-            ],
-            "synonyms": "string",
-            "taxonomies": {
-              "pdc-doelgroep": [
-                {
-                  "id": 0,
-                  "name": "string",
-                  "slug": "string"
-                }
-              ],
-              "pdc-type": [
-                {
-                  "id": "string",
-                  "name": "string",
-                  "slug": "string"
-                }
-              ],
-              "pdc-aspect": [
-                null
-              ],
-              "pdc-usage": [
-                null
-              ],
-              "pdc-owner": [
-                null
-              ]
-            },
-            "title-alternative": "string"
-          }
-        ]
+        }
       },
-      "ProductCollection": {
-        "title": "ProductCollection",
+      "NieuwsCollection": {
+        "title": "NieuwsCollection",
         "type": "array",
         "items": {
-          "$ref": "#/components/schemas/Product"
-        }
-      }
-    },
-    "securitySchemes": {
-      "API Key - 1": {
-        "name": "API Key",
-        "type": "apiKey",
-        "in": "query"
-      }
-    },
-    "responses": {
-      "product": {
-        "description": "Example response",
-        "content": {
-          "application/json": {
-            "schema": {
-              "properties": {
-                "id": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "application/xml": {
-            "schema": {
-              "type": "object",
-              "properties": {}
-            }
-          }
+          "$ref": "#/components/schemas/Nieuws"
         }
       }
     }
