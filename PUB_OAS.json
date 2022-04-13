@@ -2838,6 +2838,13 @@
             }
           }
         }
+      },
+      "NieuwsCollection": {
+        "title": "NieuwsCollection",
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/Nieuws"
+        }
       }
     }
   }
