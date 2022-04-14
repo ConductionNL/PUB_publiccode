@@ -4,6 +4,7 @@
     "schemas": {
       "Nieuws":[
         {
+          "properties": {
             "id": 7367,
             "title": "Voorbelasten bouwlocatie de Teisterbant",
             "content": "<p>In de loop van 2022 start de bouw van 55 woningen in Kerk-Avezaath. Dit gebeurt aan de noordkant van het dorp.</p>\n<p>Voordat er kan worden gebouwd, moet de grond eerst worden voorbelast. Voorbelast betekent dat de grond bouwrijp gemaakt wordt. Door het voorbelasten wordt de grond verdicht en wordt de zetting (verzakking) van de grond versneld. Hiervoor wordt op de bouwlocatie een pakket van ongeveer één meter schoon zand aangebracht. Dit zand blijft een half jaar liggen.</p>\n<p>De vrachtwagens rijden de volgende routes:</p>\n<ul>\n<li>Via de Woerd, Dorpsstraat en Achterstraat wordt het zand aangevoerd door de vrachtwagens.</li>\n<li>De vrachtwagens rijden via de Achterstraat, Dorpsstraat, Noordereind en Burensedijk weer terug.</li>\n</ul>\n<p>Bij de keuze van de routes hebben we zoveel mogelijk rekening gehouden met de verkeersveiligheid en verkeersoverlast. De aanvoer van het zand start op 13 april 2022 en duurt ongeveer drie weken.</p>\n<p>Deze werkzaamheden zijn dus niet de bouwwerkzaamheden, maar de voorbereiding daarop.<br />\nOver de bouwwerkzaamheden informeren we u later. Heeft u vragen? Neem contact op met de heer R. Melis via het telefoonnummer 06 54 38 22 36.</p>\n",
@@ -111,6 +112,7 @@
                 ],
                 "openpub-show-on": []
             }
+          }
         }
       ]
     }
