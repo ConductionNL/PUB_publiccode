@@ -145,9 +145,47 @@
             "description": "",
             "caption": "",
             "alt": "",
-            "rendered": "<img width=\"1024\" height=\"576\" src=\"https://www.telegraaf.nl/images/840x473/filters:format(jpeg):quality(50)/cdn-kiosk-api.telegraaf.nl/5feb83a6-d166-11ec-8256-0217670beecd.jpg\" class=\"attachment-large size-large\" alt=\"\" loading=\"lazy\" srcset=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg 1024w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg 300w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg 768w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg 1280w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" />",
-            "sizes": "(max-width: 1024px) 100vw, 1024px",
-            "srcset": "https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg 1024w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg 300w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg 768w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg 1280w"
+            "rendered": "<img width=\"1024\" height=\"576\" src=\"https://www.telegraaf.nl/images/840x473/filters:format(jpeg):quality(50)/cdn-kiosk-api.telegraaf.nl/5feb83a6-d166-11ec-8256-0217670beecd.jpg\" class=\"attachment-large size-large\" alt=\"\" loading=\"lazy\" sizes=\"(max-width: 1024px) 100vw, 1024px\" />",
+            "sizes": "(max-width: 1024px) 100vw, 1024px"
+          },
+          "links": [],
+          "notes": "",
+          "synonyms": ""
+        }
+      },
+      {
+        "properties": {
+          "id": 3912,
+          "title": "Eerste beelden vernietiging vlaggenschip Moskva opgedoken",
+          "content": "<p>Op sociale media zijn de eerste beelden opgedoken van het zinkende slagschip Moskva. Foto's en twee seconden bewegend beeld tonen het schip na de explosie aan boord. Er is veel rook te zien en het schip maakt slagzij.</p>\n<p>Het NOS OSINT-team heeft vastgesteld dat het schip op de foto's overeenkomt met eerdere foto's van de Moskva. Datum en plaats van de foto's zijn nog niet geverifieerd.</p>\n<p>Het is onduidelijk wie het materiaal heeft gemaakt en hoe het naar buiten is gekomen. De beelden lijken geschoten op een schip, mogelijk een van de vaartuigen die naar de Moskva waren gestuurd om de bemanning te redden.</p>\n<p>De Moskva (Moskou) zonk donderdag na een explosie. Oekraïne beweert dat dat kwam door een succesvolle raketaanval, Rusland zegt alleen dat er munitie op het schip is ontploft en dat er brand was. Over de oorzaak lieten de Russen zich niet uit.</p>\n<p>Het verlies van de Moskva is een pijnlijke klap voor de Russische strijdkrachten. Niet alleen is het schip vernoemd naar de Russische hoofdstad, het fungeerde in de Zwarte Zee als het vlaggenschip van de marine. Als varend hoofdkwartier was het een cruciaal onderdeel van de strijdkrachten in de regio.</p>\n<p>Volgens Rusland zijn alle opvarenden gered. De onafhankelijke Russische krant Novaja Gazeta Europe bestrijdt dat. De krant sprak de moeder van een opvarende, die haar verteld had dat circa veertig bemanningsleden zijn omgekomen. \"Hij belde mij en huilde om wat hij had gezien\", zei de moeder tegen de krant. \"Het was vreselijk.\" Veel gewonden zouden ledematen zijn kwijtgeraakt.</p>\n<h3>Brug geraakt?</h3>\n<p>Bellingcat-oprichter Eliot Higgins wijst er via Twitter op dat op de foto's de brug van het schip beschadigd lijkt. Dat zou het Oekraïense verhaal kunnen bevestigen dat kapitein Anton Koeprin bij de explosie is omgekomen.</p>\n<p>Daarnaast lijken de reddingssloepen verdwenen op de beelden, wat erop zou kunnen wijzen dat in ieder geval een deel van de bemanning zich in veiligheid heeft weten te brengen. Zaterdag gaf het Russische ministerie van Defensie beelden vrij van een inspectie van marinepersoneel dat zou zijn gered. Of dat alle opvarenden waren, is niet te bevestigen.</p>\n<p>Verder valt het op dat de zee kalm is op de beelden, terwijl Rusland juist zei dat de Moskva door het onstuimige weer was gezonken. Dat gebeurde volgens een woordvoerder toen een sleepboot het schip enkele uren na de explosie naar een haven wilde brengen.</p>",
+          "excerpt": "",
+          "date": "2022-18-04 23:22:03",
+          "slug": "eerste-beelden-vernietiging-vlaggenschip-moskva-opgedoken",
+          "post_status": "publish",
+          "connected": {
+            "openpub-item_to_openpub-theme": [],
+            "openpub-item_to_openpub-subtheme": [],
+            "openpub-item_to_openpub-location": [],
+            "openpub-item_to_openpub-item": []
+          },
+          "downloads": [],
+          "expired": {
+            "message": "",
+            "status": false,
+            "on": {
+              "date": "2022-05-15 00:00:00.000000",
+              "timezone_type": 3,
+              "timezone": "Europe/Amsterdam"
+            }
+          },
+          "highlighted": false,
+          "image": {
+            "title": "Moskva",
+            "description": "",
+            "caption": "",
+            "alt": "",
+            "rendered": "<img width=\"1024\" height=\"576\" src=\"https://cdn.nos.nl/image/2022/04/18/852804/1920x1080a.jpg\" class=\"attachment-large size-large\" alt=\"\" loading=\"lazy\" sizes=\"(max-width: 1024px) 100vw, 1024px\" />",
+            "sizes": "(max-width: 1024px) 100vw, 1024px"
           },
           "links": [],
           "notes": "",
