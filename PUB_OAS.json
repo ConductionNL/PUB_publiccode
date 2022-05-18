@@ -486,6 +486,21 @@
   },
   "components": {
     "schemas": {
+      "TaxonomieType": {
+        "title": "TaxonomieType",
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        }
+      },
       "Taxonomies": {
         "title": "Taxonomies",
         "type": "object",
@@ -493,52 +508,19 @@
           "openpub-audience": {
             "type": "array",
             "items": {
-              "type": "object",
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "slug": {
-                  "type": "string"
-                }
-              }
+              "$ref": "#/components/schemas/TaxonomieType"
             }
           },
           "openpub-type": {
             "type": "array",
             "items": {
-              "type": "object",
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "slug": {
-                  "type": "string"
-                }
-              }
+              "$ref": "#/components/schemas/TaxonomieType"
             }
           },
           "openpub-usage": {
             "type": "array",
             "items": {
-              "type": "object",
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "slug": {
-                  "type": "string"
-                }
-              }
+              "$ref": "#/components/schemas/TaxonomieType"
             }
           },
           "openpub-show-on": {
