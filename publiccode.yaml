@@ -35,12 +35,12 @@ description:
     shortDescription: "Een API voor het registreren, bewerken en opvragen van nieuwsberichten."
     documentation: 'https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/PUB_publiccode/main/PUB_OAS.json'
     apiDocumentation: 'https://raw.githubusercontent.com/ConductionNL/PUB_publiccode/main/PUB_OAS.json'
-    testDataLocation: 'https://raw.githubusercontent.com/ConductionNL/PUB_publiccode/main/data/pub.json'
+    testDataLocation: 'https://raw.githubusercontent.com/ConductionNL/PUB_publiccode/main/data/PUB.json'
   en:
     shortDescription: "An API to register, edit and read news items"
     documentation: 'https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/PUB_publiccode/main/PUB_OAS.json'
     apiDocumentation: 'https://raw.githubusercontent.com/ConductionNL/PUB_publiccode/main/PUB_OAS.json'
-    testDataLocation: 'https://raw.githubusercontent.com/ConductionNL/PUB_publiccode/main/data/pub.json'
+    testDataLocation: 'https://raw.githubusercontent.com/ConductionNL/PUB_publiccode/main/data/PUB.json'
 
 dependsOn:
   open:

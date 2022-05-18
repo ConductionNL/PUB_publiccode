@@ -1,117 +1,236 @@
 {
-    "openapi": "3.0.0",
-    "collection": "https://raw.githubusercontent.com/ConductionNL/PUB_publiccode/main/PUB_OAS.json",
-    "schemas": {
-      "Nieuws":[
-        {
-            "id": 7367,
-            "title": "Voorbelasten bouwlocatie de Teisterbant",
-            "content": "<p>In de loop van 2022 start de bouw van 55 woningen in Kerk-Avezaath. Dit gebeurt aan de noordkant van het dorp.</p>\n<p>Voordat er kan worden gebouwd, moet de grond eerst worden voorbelast. Voorbelast betekent dat de grond bouwrijp gemaakt wordt. Door het voorbelasten wordt de grond verdicht en wordt de zetting (verzakking) van de grond versneld. Hiervoor wordt op de bouwlocatie een pakket van ongeveer één meter schoon zand aangebracht. Dit zand blijft een half jaar liggen.</p>\n<p>De vrachtwagens rijden de volgende routes:</p>\n<ul>\n<li>Via de Woerd, Dorpsstraat en Achterstraat wordt het zand aangevoerd door de vrachtwagens.</li>\n<li>De vrachtwagens rijden via de Achterstraat, Dorpsstraat, Noordereind en Burensedijk weer terug.</li>\n</ul>\n<p>Bij de keuze van de routes hebben we zoveel mogelijk rekening gehouden met de verkeersveiligheid en verkeersoverlast. De aanvoer van het zand start op 13 april 2022 en duurt ongeveer drie weken.</p>\n<p>Deze werkzaamheden zijn dus niet de bouwwerkzaamheden, maar de voorbereiding daarop.<br />\nOver de bouwwerkzaamheden informeren we u later. Heeft u vragen? Neem contact op met de heer R. Melis via het telefoonnummer 06 54 38 22 36.</p>\n",
-            "excerpt": "",
-            "date": "2022-04-12 11:22:03",
-            "slug": "voorbelasten-bouwlocatie-de-teisterbant",
-            "post_status": "publish",
-            "connected": {
-                "openpub-item_to_openpub-theme": [],
-                "openpub-item_to_openpub-subtheme": [],
-                "openpub-item_to_openpub-location": [],
-                "openpub-item_to_openpub-item": []
-            },
-            "downloads": [],
-            "expired": {
-                "message": "",
-                "status": false,
-                "on": {
-                    "date": "2022-05-15 00:00:00.000000",
-                    "timezone_type": 3,
-                    "timezone": "Europe/Amsterdam"
-                }
-            },
-            "highlighted": false,
-            "image": {
-                "title": "bandensporen",
-                "description": "",
-                "caption": "",
-                "alt": "",
-                "rendered": "<img width=\"1024\" height=\"576\" src=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg\" class=\"attachment-large size-large\" alt=\"\" loading=\"lazy\" srcset=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg 1024w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg 300w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg 768w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg 1280w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" />",
-                "sizes": "(max-width: 1024px) 100vw, 1024px",
-                "srcset": "https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg 1024w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg 300w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg 768w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg 1280w",
-                "meta": {
-                    "width": 1280,
-                    "height": 720,
-                    "file": "2022/04/bandensporen-e1649755297420.jpg",
-                    "sizes": {
-                        "medium": {
-                            "file": "bandensporen-e1649755297420-300x169.jpg",
-                            "width": 300,
-                            "height": 169,
-                            "mime-type": "image/jpeg",
-                            "url": "https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg",
-                            "rendered": "<img width=\"300\" height=\"169\" src=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg\" class=\"attachment-medium size-medium\" alt=\"\" loading=\"lazy\" srcset=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg 300w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg 1024w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg 768w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg 1280w\" sizes=\"(max-width: 300px) 100vw, 300px\" />"
-                        },
-                        "large": {
-                            "file": "bandensporen-e1649755297420-1024x576.jpg",
-                            "width": 1024,
-                            "height": 576,
-                            "mime-type": "image/jpeg",
-                            "url": "https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg",
-                            "rendered": "<img width=\"1024\" height=\"576\" src=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg\" class=\"attachment-large size-large\" alt=\"\" loading=\"lazy\" srcset=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg 1024w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg 300w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg 768w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg 1280w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" />"
-                        },
-                        "thumbnail": {
-                            "file": "bandensporen-e1649755297420-150x150.jpg",
-                            "width": 150,
-                            "height": 150,
-                            "mime-type": "image/jpeg",
-                            "url": "https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-150x150.jpg",
-                            "rendered": "<img width=\"150\" height=\"150\" src=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-150x150.jpg\" class=\"attachment-thumbnail size-thumbnail\" alt=\"\" loading=\"lazy\" />"
-                        },
-                        "medium_large": {
-                            "file": "bandensporen-e1649755297420-768x432.jpg",
-                            "width": 768,
-                            "height": 432,
-                            "mime-type": "image/jpeg",
-                            "url": "https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg",
-                            "rendered": "<img width=\"768\" height=\"432\" src=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg\" class=\"attachment-medium_large size-medium_large\" alt=\"\" loading=\"lazy\" srcset=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg 768w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg 300w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg 1024w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg 1280w\" sizes=\"(max-width: 768px) 100vw, 768px\" />"
-                        },
-                        "full": {
-                            "file": "bandensporen-e1649755297420.jpg",
-                            "width": 1280,
-                            "height": 720,
-                            "mime-type": "image/jpeg",
-                            "url": "https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg",
-                            "rendered": "<img width=\"1280\" height=\"720\" src=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg\" class=\"attachment-full size-full\" alt=\"\" loading=\"lazy\" srcset=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg 1280w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg 300w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg 1024w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg 768w\" sizes=\"(max-width: 1280px) 100vw, 1280px\" />"
-                        }
-                    }
-                }
-            },
-            "links": [],
-            "notes": "",
-            "synonyms": "",
-            "taxonomies": {
-                "openpub-audience": [
-                    {
-                        "id": 2,
-                        "name": "Inwoners",
-                        "slug": "inwoners"
-                    }
-                ],
-                "openpub-type": [
-                    {
-                        "id": 22,
-                        "name": "Algemeen",
-                        "slug": "algemeen"
-                    }
-                ],
-                "openpub-usage": [
-                    {
-                        "id": 8,
-                        "name": "Portal",
-                        "slug": "website-gemeente"
-                    }
-                ],
-                "openpub-show-on": []
+  "openapi": "3.0.0",
+  "collection": "https://raw.githubusercontent.com/ConductionNL/PUB_publiccode/main/PUB_OAS.json",
+  "schemas": {
+    "Nieuws": [
+      {
+        "properties": {
+          "id": 7367,
+          "title": "Voorbelasten bouwlocatie de Teisterbant",
+          "content": "<p>In de loop van 2022 start de bouw van 55 woningen in Kerk-Avezaath. Dit gebeurt aan de noordkant van het dorp.</p>\n<p>Voordat er kan worden gebouwd, moet de grond eerst worden voorbelast. Voorbelast betekent dat de grond bouwrijp gemaakt wordt. Door het voorbelasten wordt de grond verdicht en wordt de zetting (verzakking) van de grond versneld. Hiervoor wordt op de bouwlocatie een pakket van ongeveer één meter schoon zand aangebracht. Dit zand blijft een half jaar liggen.</p>\n<p>De vrachtwagens rijden de volgende routes:</p>\n<ul>\n<li>Via de Woerd, Dorpsstraat en Achterstraat wordt het zand aangevoerd door de vrachtwagens.</li>\n<li>De vrachtwagens rijden via de Achterstraat, Dorpsstraat, Noordereind en Burensedijk weer terug.</li>\n</ul>\n<p>Bij de keuze van de routes hebben we zoveel mogelijk rekening gehouden met de verkeersveiligheid en verkeersoverlast. De aanvoer van het zand start op 13 april 2022 en duurt ongeveer drie weken.</p>\n<p>Deze werkzaamheden zijn dus niet de bouwwerkzaamheden, maar de voorbereiding daarop.<br />\nOver de bouwwerkzaamheden informeren we u later. Heeft u vragen? Neem contact op met de heer R. Melis via het telefoonnummer 06 54 38 22 36.</p>\n",
+          "excerpt": "",
+          "date": "2022-04-12 11:22:03",
+          "slug": "voorbelasten-bouwlocatie-de-teisterbant",
+          "post_status": "publish",
+          "connected": {
+            "openpub-item_to_openpub-theme": [],
+            "openpub-item_to_openpub-subtheme": [],
+            "openpub-item_to_openpub-location": [],
+            "openpub-item_to_openpub-item": []
+          },
+          "downloads": [],
+          "expired": {
+            "message": "",
+            "status": false,
+            "on": {
+              "date": "2022-05-15 00:00:00.000000",
+              "timezone_type": 3,
+              "timezone": "Europe/Amsterdam"
             }
+          },
+          "highlighted": false,
+          "image": {
+            "title": "bandensporen",
+            "description": "",
+            "caption": "",
+            "alt": "",
+            "rendered": "<img width=\"1024\" height=\"576\" src=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg\" class=\"attachment-large size-large\" alt=\"\" loading=\"lazy\" srcset=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg 1024w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg 300w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg 768w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg 1280w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" />",
+            "sizes": "(max-width: 1024px) 100vw, 1024px",
+            "srcset": "https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg 1024w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg 300w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg 768w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg 1280w",
+            "meta": {
+              "width": 1280,
+              "height": 720,
+              "file": "2022/04/bandensporen-e1649755297420.jpg",
+              "sizes": {
+                "medium": {
+                  "file": "bandensporen-e1649755297420-300x169.jpg",
+                  "width": 300,
+                  "height": 169,
+                  "mime-type": "image/jpeg",
+                  "url": "https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg",
+                  "rendered": "<img width=\"300\" height=\"169\" src=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg\" class=\"attachment-medium size-medium\" alt=\"\" loading=\"lazy\" srcset=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg 300w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg 1024w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg 768w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg 1280w\" sizes=\"(max-width: 300px) 100vw, 300px\" />"
+                },
+                "large": {
+                  "file": "bandensporen-e1649755297420-1024x576.jpg",
+                  "width": 1024,
+                  "height": 576,
+                  "mime-type": "image/jpeg",
+                  "url": "https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg",
+                  "rendered": "<img width=\"1024\" height=\"576\" src=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg\" class=\"attachment-large size-large\" alt=\"\" loading=\"lazy\" srcset=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg 1024w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg 300w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg 768w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg 1280w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" />"
+                },
+                "thumbnail": {
+                  "file": "bandensporen-e1649755297420-150x150.jpg",
+                  "width": 150,
+                  "height": 150,
+                  "mime-type": "image/jpeg",
+                  "url": "https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-150x150.jpg",
+                  "rendered": "<img width=\"150\" height=\"150\" src=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-150x150.jpg\" class=\"attachment-thumbnail size-thumbnail\" alt=\"\" loading=\"lazy\" />"
+                },
+                "medium_large": {
+                  "file": "bandensporen-e1649755297420-768x432.jpg",
+                  "width": 768,
+                  "height": 432,
+                  "mime-type": "image/jpeg",
+                  "url": "https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg",
+                  "rendered": "<img width=\"768\" height=\"432\" src=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg\" class=\"attachment-medium_large size-medium_large\" alt=\"\" loading=\"lazy\" srcset=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg 768w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg 300w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg 1024w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg 1280w\" sizes=\"(max-width: 768px) 100vw, 768px\" />"
+                },
+                "full": {
+                  "file": "bandensporen-e1649755297420.jpg",
+                  "width": 1280,
+                  "height": 720,
+                  "mime-type": "image/jpeg",
+                  "url": "https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg",
+                  "rendered": "<img width=\"1280\" height=\"720\" src=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg\" class=\"attachment-full size-full\" alt=\"\" loading=\"lazy\" srcset=\"https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420.jpg 1280w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-300x169.jpg 300w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-1024x576.jpg 1024w, https://openpub.buren.nl/wp-content/uploads/2022/04/bandensporen-e1649755297420-768x432.jpg 768w\" sizes=\"(max-width: 1280px) 100vw, 1280px\" />"
+                }
+              }
+            }
+          },
+          "links": [],
+          "notes": "",
+          "synonyms": "",
+          "taxonomies": {
+            "openpub-audience": [
+              {
+                "id": 2,
+                "name": "Inwoners",
+                "slug": "inwoners"
+              }
+            ],
+            "openpub-type": [
+              {
+                "id": 22,
+                "name": "Algemeen",
+                "slug": "algemeen"
+              }
+            ],
+            "openpub-usage": [
+              {
+                "id": 8,
+                "name": "Portal",
+                "slug": "website-gemeente"
+              }
+            ],
+            "openpub-show-on": []
+          }
         }
-      ]
-    }
+      },
+      {
+        "properties": {
+          "id": 6567,
+          "title": "Ajax kampioen, uitzinnige fans vieren feestje",
+          "content": "<p>De festiviteiten wegens het landskampioenschap verliepen woensdagavond in Amsterdam zonder grote problemen. Het Amsterdamse politiekorps kijkt terug op een \"feestelijke en beheersbare avond\". Wel werden 51 mensen aangehouden, maar slechts een enkeling moet de nacht in de cel doorbrengen.</p>\n<p>De verrichte arrestaties waren volgens de politie vooral het gevolg van vuurwerk, belediging of het verstoren van de openbare orde.</p>\n<p>„Wij zijn kampioen, wij zijn kampioen”, klonk het woensdagavond uit de vele volle cafés in de hoofdstad, waar de kampioenswedstrijd door velen werd bekeken. Op het Leidseplein, dat volliep vanuit omliggende straten, barstte een groot feest los. Er werden vuurwerk en fakkels afgestoken en met vlaggen gezwaaid. Ondanks de regen heerste de pret en gooiden mensen de handjes in de lucht.</p>\n<p>De Amsterdamse politie feliciteert Ajax met het behalen van de titel. „We wensen iedereen een prettig en veilig kampioensfeest”, twittert het korps. Om alles in goede banen te leiden, is bij het Leidseplein veel politie op de been.</p>\n<p>Een paar kilometer verderop in de Johan Cruijff ArenA, werd Ajax gehuldigd. Duizenden fans die geen kaartje konden bemachtigen voor de wedstrijd verzamelden zich onder het parkeerdek bij het stadion. Ook daar werd veel vuurwerk afgestoken om de titel te vieren.</p>\n<p>De gemeente Amsterdam feliciteert Ajax van harte met het 36e kampioenschap, zegt een woordvoerder van burgemeester Femke Halsema woensdag. Wegens de drukte in de stad heeft de zogenoemde driehoek (burgemeester, hoofdofficier van justitie en politiecommissaris) zich verzameld in het hoofdbureau aan de Elandsgracht. Halsema was om die reden niet bij de huldiging van de club in het stadion.</p>\n<p>Eerder woensdag verzamelden zich supporters op het Leidseplein, dat samen met het Rembrandtplein is aangewezen als veiligheidsrisicogebied, evenals de omgeving van de Johan Cruijff ArenA.</p>\n",
+          "excerpt": "",
+          "date": "2022-11-05 23:22:03",
+          "slug": "voorbelasten-bouwlocatie-de-teisterbant",
+          "post_status": "publish",
+          "connected": {
+            "openpub-item_to_openpub-theme": [],
+            "openpub-item_to_openpub-subtheme": [],
+            "openpub-item_to_openpub-location": [],
+            "openpub-item_to_openpub-item": []
+          },
+          "downloads": [],
+          "expired": {
+            "message": "",
+            "status": false,
+            "on": {
+              "date": "2022-05-15 00:00:00.000000",
+              "timezone_type": 3,
+              "timezone": "Europe/Amsterdam"
+            }
+          },
+          "highlighted": false,
+          "image": {
+            "title": "ajaxSuporters",
+            "description": "",
+            "caption": "",
+            "alt": "",
+            "rendered": "<img width=\"1024\" height=\"576\" src=\"https://www.telegraaf.nl/images/840x473/filters:format(jpeg):quality(50)/cdn-kiosk-api.telegraaf.nl/5feb83a6-d166-11ec-8256-0217670beecd.jpg\" class=\"attachment-large size-large\" alt=\"\" loading=\"lazy\" sizes=\"(max-width: 1024px) 100vw, 1024px\" />",
+            "sizes": "(max-width: 1024px) 100vw, 1024px"
+          },
+          "links": [],
+          "notes": "",
+          "synonyms": ""
+        }
+      },
+      {
+        "properties": {
+          "id": 3912,
+          "title": "Eerste beelden vernietiging vlaggenschip Moskva opgedoken",
+          "content": "<p>Op sociale media zijn de eerste beelden opgedoken van het zinkende slagschip Moskva. Foto's en twee seconden bewegend beeld tonen het schip na de explosie aan boord. Er is veel rook te zien en het schip maakt slagzij.</p>\n<p>Het NOS OSINT-team heeft vastgesteld dat het schip op de foto's overeenkomt met eerdere foto's van de Moskva. Datum en plaats van de foto's zijn nog niet geverifieerd.</p>\n<p>Het is onduidelijk wie het materiaal heeft gemaakt en hoe het naar buiten is gekomen. De beelden lijken geschoten op een schip, mogelijk een van de vaartuigen die naar de Moskva waren gestuurd om de bemanning te redden.</p>\n<p>De Moskva (Moskou) zonk donderdag na een explosie. Oekraïne beweert dat dat kwam door een succesvolle raketaanval, Rusland zegt alleen dat er munitie op het schip is ontploft en dat er brand was. Over de oorzaak lieten de Russen zich niet uit.</p>\n<p>Het verlies van de Moskva is een pijnlijke klap voor de Russische strijdkrachten. Niet alleen is het schip vernoemd naar de Russische hoofdstad, het fungeerde in de Zwarte Zee als het vlaggenschip van de marine. Als varend hoofdkwartier was het een cruciaal onderdeel van de strijdkrachten in de regio.</p>\n<p>Volgens Rusland zijn alle opvarenden gered. De onafhankelijke Russische krant Novaja Gazeta Europe bestrijdt dat. De krant sprak de moeder van een opvarende, die haar verteld had dat circa veertig bemanningsleden zijn omgekomen. \"Hij belde mij en huilde om wat hij had gezien\", zei de moeder tegen de krant. \"Het was vreselijk.\" Veel gewonden zouden ledematen zijn kwijtgeraakt.</p>\n<h3>Brug geraakt?</h3>\n<p>Bellingcat-oprichter Eliot Higgins wijst er via Twitter op dat op de foto's de brug van het schip beschadigd lijkt. Dat zou het Oekraïense verhaal kunnen bevestigen dat kapitein Anton Koeprin bij de explosie is omgekomen.</p>\n<p>Daarnaast lijken de reddingssloepen verdwenen op de beelden, wat erop zou kunnen wijzen dat in ieder geval een deel van de bemanning zich in veiligheid heeft weten te brengen. Zaterdag gaf het Russische ministerie van Defensie beelden vrij van een inspectie van marinepersoneel dat zou zijn gered. Of dat alle opvarenden waren, is niet te bevestigen.</p>\n<p>Verder valt het op dat de zee kalm is op de beelden, terwijl Rusland juist zei dat de Moskva door het onstuimige weer was gezonken. Dat gebeurde volgens een woordvoerder toen een sleepboot het schip enkele uren na de explosie naar een haven wilde brengen.</p>",
+          "excerpt": "",
+          "date": "2022-18-04 23:22:03",
+          "slug": "eerste-beelden-vernietiging-vlaggenschip-moskva-opgedoken",
+          "post_status": "publish",
+          "connected": {
+            "openpub-item_to_openpub-theme": [],
+            "openpub-item_to_openpub-subtheme": [],
+            "openpub-item_to_openpub-location": [],
+            "openpub-item_to_openpub-item": []
+          },
+          "downloads": [],
+          "expired": {
+            "message": "",
+            "status": false,
+            "on": {
+              "date": "2022-05-15 00:00:00.000000",
+              "timezone_type": 3,
+              "timezone": "Europe/Amsterdam"
+            }
+          },
+          "highlighted": false,
+          "image": {
+            "title": "Moskva",
+            "description": "",
+            "caption": "",
+            "alt": "",
+            "rendered": "<img width=\"1024\" height=\"576\" src=\"https://cdn.nos.nl/image/2022/04/18/852804/1920x1080a.jpg\" class=\"attachment-large size-large\" alt=\"\" loading=\"lazy\" sizes=\"(max-width: 1024px) 100vw, 1024px\" />",
+            "sizes": "(max-width: 1024px) 100vw, 1024px"
+          },
+          "links": [],
+          "notes": "",
+          "synonyms": ""
+        }
+      },
+      {
+        "properties": {
+          "id": 812,
+          "title": "Zwerfafvalbrigades: een nieuwe aanpak van zwerfafval ook in Buren!",
+          "content": "<p><strong>Stichting Landschapsbeheer Gelderland (SLG) organiseert samen met de gemeente Buren een informatieavond over een nieuwe aanpak van zwerfafval in Buren. De bijeenkomst is op dinsdag 31 mei om 19.30 uur in Buren, bij het clubhuis van TVB, Plantsoen 3. De inloop start vanaf 19.15 uur.</strong><a href=\"http://www.landschapsbeheergelderland.nl/zwerfafvalbrigade-buren\">Aanmelden kan via de website van Stichting Landschapsbeheer Gelderland.</a></p>\n<p>In de gemeente Buren zijn er steeds meer mensen actief bezig met het opschonen van de omgeving. Al jaren zijn daar de buurtjutters actief. Dit zijn verenigingen die elk kwartaal afval prikken. Een aantal inwoners bedachten het plan om een zwerfafvalbrigade op te richten. SLG wil dit samen met de gemeente Buren gaan doen als aanvulling op de buurtjutters. Deze brigade gaat zich richten op het buitengebied rond Buren.</p>\n<p>Wethouder Duurzaamheid Pieter Neven: “Het is mooi om te zien dat onze inwoners actief bezig zijn met het opruimen van zwerfafval. Goede voorbeelden zijn de buurtjutters en de zwerfafvalbrigade. Zij zetten zich al jaren in voor een schonere gemeente. Afval hoort niet in de natuur, maar in de afvalbak.”</p><h2>Zwerfafvalbrigades</h2>\n<p>Onder het motto van ‘samen bereik je meer’ richt SLG al jaren zwerfafvalbrigades op. Er zijn in de tussentijd al meer dan zestig zwerfafvalbrigades opgericht in Gelderland. Deze groepen van enthousiaste vrijwilligers trekken er samen of alleen op uit om zwerfafval te verzamelen. Dat geeft leuke contacten in de buurt én een schone omgeving. Het prikken van afval wordt afgestemd met de buurtjutters in de gemeente.</p>\n<p>Deelname is vrijblijvend en kost weinig tijd. De deelnemers spreken zelf af wanneer ze erop uit trekken, hoe groot de groepjes zijn en op welke locaties ze actief zijn. Voordat de brigade van start gaat krijgen de vrijwilligers arbo- en veiligheidsinstructies van SLG. Ook ontvangen zij alle materialen die ze nodig hebben. De gemeente zorgt voor de afvoer van het afval.</p>\n<h2>Benieuwd? Kom dan naar de startbijeenkomst</h2>\n<a href=\"http://www.landschapsbeheergelderland.nl/zwerfafvalbrigade-buren\">Meer informatie staat op www.landschapsbeheergelderland.nl/zwerfafvalbrigade-buren.</a>Daar staat ook het aanmeldformulier. Aanmelden kan tot en met 30 mei.</p>\n<p><strong>Samen voor een leefbare omgeving!</strong></p>\n",
+          "excerpt": "",
+          "date": "2022-18-04 23:22:03",
+          "slug": "zwerfafvalbrigades-een-nieuwe-aanpak-van-zwerfafval-ook-in-Buren",
+          "post_status": "publish",
+          "connected": {
+            "openpub-item_to_openpub-theme": [],
+            "openpub-item_to_openpub-subtheme": [],
+            "openpub-item_to_openpub-location": [],
+            "openpub-item_to_openpub-item": []
+          },
+          "downloads": [],
+          "expired": {
+            "message": "",
+            "status": false,
+            "on": {
+              "date": "2021-05-15 00:00:00.000000",
+              "timezone_type": 3,
+              "timezone": "Europe/Amsterdam"
+            }
+          },
+          "highlighted": false,
+          "image": {
+            "title": "Zwerafval",
+            "description": "",
+            "caption": "",
+            "alt": "",
+            "rendered": "<img width=\"1024\" height=\"576\" src=\"https://openpub.buren.nl/wp-content/uploads/2020/02/Zwerfafval-768x432.jpg\" class=\"attachment-large size-large\" alt=\"\" loading=\"lazy\" sizes=\"(max-width: 1024px) 100vw, 1024px\" />",
+            "sizes": "(max-width: 1024px) 100vw, 1024px"
+          },
+          "links": [],
+          "notes": "",
+          "synonyms": ""
+        }
+      }
+    ]
+  }
 }
