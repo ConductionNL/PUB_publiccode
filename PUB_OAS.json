@@ -505,25 +505,25 @@
         "title": "Taxonomies",
         "type": "object",
         "properties": {
-          "openpub-audience": {
+          "openpubAudience": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/TaxonomieType"
             }
           },
-          "openpub-type": {
+          "openpubType": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/TaxonomieType"
             }
           },
-          "openpub-usage": {
+          "openpubUsage": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/TaxonomieType"
             }
           },
-          "openpub-show-on": {
+          "openpubShowOn": {
             "type": "array",
             "items": {}
           }

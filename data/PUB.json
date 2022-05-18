@@ -89,21 +89,21 @@
           "notes": "",
           "synonyms": "",
           "taxonomies": {
-            "openpub-audience": [
+            "openpubAudience": [
               {
                 "id": 2,
                 "name": "Inwoners",
                 "slug": "inwoners"
               }
             ],
-            "openpub-type": [
+            "openpubType": [
               {
                 "id": 22,
                 "name": "Algemeen",
                 "slug": "algemeen"
               }
             ],
-            "openpub-usage": [
+            "openpubUsage": [
               {
                 "id": 8,
                 "name": "Portal",
