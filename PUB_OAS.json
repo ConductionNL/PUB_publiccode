@@ -455,6 +455,156 @@
         "parameters": [],
         "description": "Een specifiek nieuwsbericht opvragen."
       },
+      "post": {
+        "summary": "Your POST endpoint",
+        "tags": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Nieuws"
+                },
+                "examples": {
+                  "example-1": {
+                    "value": {
+                      "Nieuws": [
+                        {
+                          "id": 0,
+                          "title": "string",
+                          "content": "string",
+                          "excerpt": "string",
+                          "date": "string",
+                          "slug": "string",
+                          "post_status": "string",
+                          "connected": {
+                            "openpub-item_to_openpub-theme": [
+                              {}
+                            ],
+                            "openpub-item_to_openpub-subtheme": [
+                              {}
+                            ],
+                            "openpub-item_to_openpub-location": [
+                              {}
+                            ],
+                            "openpub-item_to_openpub-item": [
+                              {}
+                            ]
+                          },
+                          "downloads": [
+                            {}
+                          ],
+                          "expired": {
+                            "message": "string",
+                            "status": true,
+                            "on": {
+                              "date": "string",
+                              "timezone_type": 0,
+                              "timezone": "string"
+                            }
+                          },
+                          "highlighted": true,
+                          "image": {
+                            "title": "string",
+                            "description": "string",
+                            "caption": "string",
+                            "alt": "string",
+                            "rendered": "string",
+                            "sizes": "string",
+                            "srcset": "string",
+                            "meta": {
+                              "width": 0,
+                              "height": 0,
+                              "file": "string",
+                              "sizes": {
+                                "medium": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "large": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "thumbnail": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "medium_large": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                },
+                                "full": {
+                                  "file": "string",
+                                  "width": 0,
+                                  "height": 0,
+                                  "mime-type": "string",
+                                  "url": "string",
+                                  "rendered": "string"
+                                }
+                              }
+                            }
+                          },
+                          "links": [
+                            {}
+                          ],
+                          "notes": "string",
+                          "synonyms": "string",
+                          "taxonomies": {
+                            "openpub-audience": [
+                              {
+                                "id": 0,
+                                "name": "string",
+                                "slug": "string"
+                              }
+                            ],
+                            "openpub-type": [
+                              {
+                                "id": 0,
+                                "name": "string",
+                                "slug": "string"
+                              }
+                            ],
+                            "openpub-usage": [
+                              {
+                                "id": 0,
+                                "name": "string",
+                                "slug": "string"
+                              }
+                            ],
+                            "openpub-show-on": [
+                              {}
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-nieuws-id",
+        "parameters": [],
+        "description": "Een specifiek nieuwsbericht opvragen."
+      },
       "put": {
         "summary": "",
         "operationId": "put-nieuws-id",
