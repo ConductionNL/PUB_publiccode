@@ -26,7 +26,7 @@ paths:
                 $ref: '#/components/schemas/kiss_openpub_pub'
       operationId: get-users-userId
       description: Retrieve the information of the user with the matching user ID.
-  / kiss_openpub_pub:
+  /kiss_openpub_pub:
     parameters: []
     get:
       summary: ''
