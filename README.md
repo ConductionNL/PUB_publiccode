@@ -1,4 +1,4 @@
-# Nieuwsberichten API
+# Publication API
 
 ## Introductie
 
