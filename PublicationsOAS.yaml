@@ -1,0 +1,146 @@
+openapi: 3.1.0
+x-stoplight:
+  id: egyctudz7rmef
+info:
+  title: PUB Wordpress
+  version: '1.0'
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  '/kiss_openpub_pub/{id}':
+    parameters:
+      - schema:
+          type: string
+        name: id
+        in: path
+        required: true
+    get:
+      summary: Get User Info by User ID
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/kiss_openpub_pub'
+      operationId: get-users-userId
+      description: Retrieve the information of the user with the matching user ID.
+  / kiss_openpub_pub:
+    parameters: []
+    get:
+      summary: ''
+      operationId: get-kiss_openpub_pub
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/kiss_openpub_pub'
+components:
+  schemas:
+    kiss_openpub_pub:
+      title: kiss_openpub_pub
+      x-stoplight:
+        id: jzt0ufutjr090
+      type: object
+      properties:
+        id:
+          type:
+            - string
+            - number
+          example: 84
+          readOnly: true
+        date:
+          type: string
+          example: '2022-06-21T12:01:26'
+        date_gmt:
+          type: string
+          example: '2022-06-21T12:01:26'
+        guid:
+          type: object
+          properties:
+            rendered:
+              type: string
+              example: 'https://openweb.kiss-dev.commonground.nu/?post_type=kiss_openpub_pub&#038;p=84'
+        modified:
+          type: string
+          example: '2022-07-26T18:06:06'
+        modified_gmt:
+          type: string
+          example: '2022-07-26T18:06:06'
+        slug:
+          type: string
+          example: test-gina
+        status:
+          type: string
+          example: publish
+        type:
+          type: string
+          example: kiss_openpub_pub
+        link:
+          type: string
+          example: 'https://openweb.kiss-dev.commonground.nu/kiss_openpub_pub/test-gina/'
+        title:
+          type: object
+          properties:
+            rendered:
+              type: string
+              example: Test Gina
+        content:
+          type: object
+          properties:
+            rendered:
+              type: string
+              example: '\n<p>Dit is een faketekst. Alles wat hier staat is slechts om een indruk te geven van het grafische effect van tekst op deze plek. Wat u hier leest is een voorbeeldtekst. Deze wordt later vervangen door de uiteindelijke tekst, die nu nog niet bekend is. De faketekst is dus een tekst die eigenlijk nergens over gaat. Het grappige is, dat mensen deze toch vaak lezen. Zelfs als men weet dat het om een faketekst gaat, lezen ze toch door. Wellicht verwachten ze nog een grappig weetje, een clou of een verrassing. Maar die is er eigenlijk nooit. Dus het is verspilde moeite en energie, maar ja wat doe je er aan? Waarschijnlijk helemaal niets. Zie je wel? </p>\n\n\n\n<p></p>\n\n\n\n<p></p>\n'
+            protected:
+              type: boolean
+              default: false
+        excerpt:
+          type: object
+          properties:
+            rendered:
+              type: string
+              example: '<p>Dit is een faketekst. Alles wat hier staat is slechts om een indruk te geven van het grafische effect van tekst op deze plek. Wat u hier leest is een voorbeeldtekst. Deze wordt later vervangen door de uiteindelijke tekst, die nu nog niet bekend is. De faketekst is dus een tekst die eigenlijk nergens over [&hellip;]</p>\n'
+            protected:
+              type: boolean
+              default: false
+        author:
+          type: number
+          example: 1
+        featured_media:
+          type: number
+          example: 0
+        comment_status:
+          type: string
+          example: open
+        ping_status:
+          type: string
+          example: closed
+        template:
+          type: string
+        openpub-audience:
+          type: array
+          items:
+            type: number
+        openpub-type:
+          type: array
+          items:
+            type: number
+        openpub-usage:
+          type: array
+          items:
+            type: number
+        openpub-show-on:
+          type: array
+          items:
+            type: number
+        openpub_skill:
+          type: array
+          items:
+            type: number
+        _links:
+          type: object
