@@ -4,8 +4,16 @@ x-stoplight:
 info:
   title: PUB Wordpress
   version: '1.0'
+  license:
+    url: 'https://opensource.org/licenses/EUPL-1.2'
+    name: EUPL-1.2
+  contact:
+    name: Ruben
+    url: van der Linde
+    email: ruben@conduction.nl
+  description: Provides an API in acordance with the (wordpress based) pub standard
 servers:
-  - url: 'http://localhost:3000'
+  - url: 'http://localhost'
 paths:
   '/kiss_openpub_pub/{id}':
     parameters:
@@ -14,9 +22,9 @@ paths:
         name: id
         in: path
         required: true
+        description: The identifier of the publication
     get:
-      summary: Get User Info by User ID
-      tags: []
+      summary: Get single pub item
       responses:
         '200':
           description: OK
@@ -25,11 +33,11 @@ paths:
               schema:
                 $ref: '#/components/schemas/kiss_openpub_pub'
       operationId: get-users-userId
-      description: Retrieve the information of the user with the matching user ID.
-  /kiss_openpub_pub:
+      description: Retrieve a single publication
+  / kiss_openpub_pub:
     parameters: []
     get:
-      summary: ''
+      summary: Get publications list
       operationId: get-kiss_openpub_pub
       responses:
         '200':
@@ -40,13 +48,15 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/kiss_openpub_pub'
+      description: Get a list of publications
 components:
   schemas:
     kiss_openpub_pub:
-      title: kiss_openpub_pub
+      title: Publication
       x-stoplight:
         id: jzt0ufutjr090
       type: object
+      description: A publication conform the Open Pub standard
       properties:
         id:
           type:
@@ -144,3 +154,22 @@ components:
             type: number
         _links:
           type: object
+        acf:
+          type: object
+          properties:
+            publication_title:
+              type: string
+            publication_content:
+              type: string
+            publication_type:
+              type: number
+            publication_skill:
+              type: array
+              items:
+                type: number
+            publication_end_date:
+              type: string
+              format: date-time
+              example: '2022-07-26T18:06:06'
+            publication_featured:
+              type: boolean
