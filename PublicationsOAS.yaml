@@ -34,7 +34,7 @@ paths:
                 $ref: '#/components/schemas/kiss_openpub_pub'
       operationId: get-users-userId
       description: Retrieve a single publication
-  / kiss_openpub_pub:
+  /kiss_openpub_pub:
     parameters: []
     get:
       summary: Get publications list
