@@ -1,299 +1,29 @@
 {
-  "openapi": "3.0.1",
-  "info": {
-    "title": "PUB API",
-    "version": "1.0"
+  "openapi": "3.1.0",
+  "x-stoplight": {
+    "id": "egyctudz7rmef"
   },
-  "paths": {
-    "/nieuws": {
-      "get": {
-        "summary": "Your GET endpoint",
-        "tags": [],
-        "operationId": "get-nieuws",
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "results": {
-                      "type": "array",
-                      "items": {
-                        "$ref": "#/components/schemas/Nieuws"
-                      }
-                    }
-                  }
-                },
-                "examples": {
-                  "example-1": {
-                    "value": {
-                      "results": [
-                        {
-                          "id": "string",
-                          "title": "string",
-                          "content": "string",
-                          "excerpt": "string",
-                          "date": "2019-08-24",
-                          "slug": "string",
-                          "post-status": "string",
-                          "connected": {
-                            "openpub-item_to_theme": [
-                              null
-                            ],
-                            "openpub-item_to_openpub-subtheme": [
-                              null
-                            ],
-                            "openpub-item_to_openpub-location": [
-                              null
-                            ],
-                            "openpub-item_to_openpub-item": [
-                              null
-                            ]
-                          },
-                          "downloads": [
-                            null
-                          ],
-                          "expired": {
-                            "message": "string",
-                            "status": true,
-                            "on": {
-                              "date": "2019-08-24",
-                              "timezone_type": 0,
-                              "timezone": "string"
-                            }
-                          },
-                          "highlighted": true,
-                          "image": {
-                            "title": "string",
-                            "description": "string",
-                            "caption": "string",
-                            "alt": "string",
-                            "rendered": "string",
-                            "sizes": "string",
-                            "srcset": "string",
-                            "meta": {
-                              "width": 0,
-                              "height": 0,
-                              "file": "string",
-                              "sizes": {
-                                "medium": {
-                                  "file": "string",
-                                  "width": 0,
-                                  "height": 0,
-                                  "mime-type": "string",
-                                  "url": "string",
-                                  "rendered": "string"
-                                },
-                                "large": {
-                                  "file": "string",
-                                  "width": 0,
-                                  "height": 0,
-                                  "mime-type": "string",
-                                  "url": "string",
-                                  "rendered": "string"
-                                },
-                                "thumbnail": {
-                                  "file": "string",
-                                  "width": 0,
-                                  "height": 0,
-                                  "mime-type": "string",
-                                  "url": "string",
-                                  "rendered": "string"
-                                },
-                                "medium_large": {
-                                  "file": "string",
-                                  "width": 0,
-                                  "height": 0,
-                                  "mime-type": "string",
-                                  "url": "string",
-                                  "rendered": "string"
-                                },
-                                "full": {
-                                  "file": "string",
-                                  "width": 0,
-                                  "height": 0,
-                                  "mime-type": "string",
-                                  "url": "string",
-                                  "rendered": "string"
-                                }
-                              }
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "description": "Vraag alle nieuwsberichten op."
-      },
-      "post": {
-        "summary": "",
-        "operationId": "post-nieuws",
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Nieuws"
-                },
-                "examples": {
-                  "example-1": {
-                    "value": {
-                      "Nieuws": [
-                        {
-                          "id": 0,
-                          "title": "string",
-                          "content": "string",
-                          "excerpt": "string",
-                          "date": "string",
-                          "slug": "string",
-                          "post_status": "string",
-                          "connected": {
-                            "openpub-item_to_openpub-theme": [
-                              {}
-                            ],
-                            "openpub-item_to_openpub-subtheme": [
-                              {}
-                            ],
-                            "openpub-item_to_openpub-location": [
-                              {}
-                            ],
-                            "openpub-item_to_openpub-item": [
-                              {}
-                            ]
-                          },
-                          "downloads": [
-                            {}
-                          ],
-                          "expired": {
-                            "message": "string",
-                            "status": false,
-                            "on": {
-                              "date": "string",
-                              "timezone_type": 0,
-                              "timezone": "string"
-                            }
-                          },
-                          "highlighted": false,
-                          "image": {
-                            "title": "string",
-                            "description": "string",
-                            "caption": "string",
-                            "alt": "string",
-                            "rendered": "string",
-                            "sizes": "string",
-                            "srcset": "string",
-                            "meta": {
-                              "width": 0,
-                              "height": 0,
-                              "file": "string",
-                              "sizes": {
-                                "medium": {
-                                  "file": "string",
-                                  "width": 0,
-                                  "height": 0,
-                                  "mime-type": "string",
-                                  "url": "string",
-                                  "rendered": "string"
-                                },
-                                "large": {
-                                  "file": "string",
-                                  "width": 0,
-                                  "height": 0,
-                                  "mime-type": "string",
-                                  "url": "string",
-                                  "rendered": "string"
-                                },
-                                "thumbnail": {
-                                  "file": "string",
-                                  "width": 0,
-                                  "height": 0,
-                                  "mime-type": "string",
-                                  "url": "string",
-                                  "rendered": "string"
-                                },
-                                "medium_large": {
-                                  "file": "string",
-                                  "width": 0,
-                                  "height": 0,
-                                  "mime-type": "string",
-                                  "url": "string",
-                                  "rendered": "string"
-                                },
-                                "full": {
-                                  "file": "string",
-                                  "width": 0,
-                                  "height": 0,
-                                  "mime-type": "string",
-                                  "url": "string",
-                                  "rendered": "string"
-                                }
-                              }
-                            }
-                          },
-                          "links": [
-                            {}
-                          ],
-                          "notes": "string",
-                          "synonyms": "string",
-                          "taxonomies": {
-                            "openpub-audience": [
-                              {
-                                "id": 0,
-                                "name": "string",
-                                "slug": "string"
-                              }
-                            ],
-                            "openpub-type": [
-                              {
-                                "id": 0,
-                                "name": "string",
-                                "slug": "string"
-                              }
-                            ],
-                            "openpub-usage": [
-                              {
-                                "id": 0,
-                                "name": "string",
-                                "slug": "string"
-                              }
-                            ],
-                            "openpub-show-on": [
-                              {}
-                            ]
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            },
-            "headers": {}
-          }
-        },
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "in": "header",
-            "required": true,
-            "name": "Content-type",
-            "description": "Content type van de verzoekinhoud."
-          }
-        ],
-        "description": "Maak een nieuwsbericht aan."
-      }
+  "info": {
+    "title": "PUB Wordpress",
+    "version": "1.0",
+    "license": {
+      "url": "https://opensource.org/licenses/EUPL-1.2",
+      "name": "EUPL-1.2"
     },
-    "/nieuws/{id}": {
+    "contact": {
+      "name": "Ruben",
+      "url": "van der Linde",
+      "email": "ruben@conduction.nl"
+    },
+    "description": "Provides an API in acordance with the (wordpress based) pub standard"
+  },
+  "servers": [
+    {
+      "url": "http://localhost"
+    }
+  ],
+  "paths": {
+    "/kiss_openpub_pub/{id}": {
       "parameters": [
         {
           "schema": {
@@ -302,767 +32,163 @@
           "name": "id",
           "in": "path",
           "required": true,
-          "description": "Unieke ID"
+          "description": "The identifier of the publication"
         }
       ],
       "get": {
-        "summary": "Your GET endpoint",
-        "tags": [],
+        "summary": "Get single pub item",
         "responses": {
           "200": {
             "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Nieuws"
-                },
-                "examples": {
-                  "example-1": {
-                    "value": {
-                      "Nieuws": [
-                        {
-                          "id": 0,
-                          "title": "string",
-                          "content": "string",
-                          "excerpt": "string",
-                          "date": "string",
-                          "slug": "string",
-                          "post_status": "string",
-                          "connected": {
-                            "openpub-item_to_openpub-theme": [
-                              {}
-                            ],
-                            "openpub-item_to_openpub-subtheme": [
-                              {}
-                            ],
-                            "openpub-item_to_openpub-location": [
-                              {}
-                            ],
-                            "openpub-item_to_openpub-item": [
-                              {}
-                            ]
-                          },
-                          "downloads": [
-                            {}
-                          ],
-                          "expired": {
-                            "message": "string",
-                            "status": true,
-                            "on": {
-                              "date": "string",
-                              "timezone_type": 0,
-                              "timezone": "string"
-                            }
-                          },
-                          "highlighted": true,
-                          "image": {
-                            "title": "string",
-                            "description": "string",
-                            "caption": "string",
-                            "alt": "string",
-                            "rendered": "string",
-                            "sizes": "string",
-                            "srcset": "string",
-                            "meta": {
-                              "width": 0,
-                              "height": 0,
-                              "file": "string",
-                              "sizes": {
-                                "medium": {
-                                  "file": "string",
-                                  "width": 0,
-                                  "height": 0,
-                                  "mime-type": "string",
-                                  "url": "string",
-                                  "rendered": "string"
-                                },
-                                "large": {
-                                  "file": "string",
-                                  "width": 0,
-                                  "height": 0,
-                                  "mime-type": "string",
-                                  "url": "string",
-                                  "rendered": "string"
-                                },
-                                "thumbnail": {
-                                  "file": "string",
-                                  "width": 0,
-                                  "height": 0,
-                                  "mime-type": "string",
-                                  "url": "string",
-                                  "rendered": "string"
-                                },
-                                "medium_large": {
-                                  "file": "string",
-                                  "width": 0,
-                                  "height": 0,
-                                  "mime-type": "string",
-                                  "url": "string",
-                                  "rendered": "string"
-                                },
-                                "full": {
-                                  "file": "string",
-                                  "width": 0,
-                                  "height": 0,
-                                  "mime-type": "string",
-                                  "url": "string",
-                                  "rendered": "string"
-                                }
-                              }
-                            }
-                          },
-                          "links": [
-                            {}
-                          ],
-                          "notes": "string",
-                          "synonyms": "string",
-                          "taxonomies": {
-                            "openpub-audience": [
-                              {
-                                "id": 0,
-                                "name": "string",
-                                "slug": "string"
-                              }
-                            ],
-                            "openpub-type": [
-                              {
-                                "id": 0,
-                                "name": "string",
-                                "slug": "string"
-                              }
-                            ],
-                            "openpub-usage": [
-                              {
-                                "id": 0,
-                                "name": "string",
-                                "slug": "string"
-                              }
-                            ],
-                            "openpub-show-on": [
-                              {}
-                            ]
-                          }
-                        }
-                      ]
-                    }
+                  "$ref": "#/components/schemas/kiss_openpub_pub"
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-users-userId",
+        "description": "Retrieve a single publication"
+      }
+    },
+    "/kiss_openpub_pub": {
+      "parameters": [],
+      "get": {
+        "summary": "Get publications list",
+        "operationId": "get-kiss_openpub_pub",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/kiss_openpub_pub"
                   }
                 }
               }
             }
           }
         },
-        "operationId": "get-nieuws-id",
-        "parameters": [],
-        "description": "Een specifiek nieuwsbericht opvragen."
-      },
-      "post": {
-        "summary": "Your POST endpoint",
-        "tags": [],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Nieuws"
-                },
-                "examples": {
-                  "example-1": {
-                    "value": {
-                      "Nieuws": [
-                        {
-                          "id": 0,
-                          "title": "string",
-                          "content": "string",
-                          "excerpt": "string",
-                          "date": "string",
-                          "slug": "string",
-                          "post_status": "string",
-                          "connected": {
-                            "openpub-item_to_openpub-theme": [
-                              {}
-                            ],
-                            "openpub-item_to_openpub-subtheme": [
-                              {}
-                            ],
-                            "openpub-item_to_openpub-location": [
-                              {}
-                            ],
-                            "openpub-item_to_openpub-item": [
-                              {}
-                            ]
-                          },
-                          "downloads": [
-                            {}
-                          ],
-                          "expired": {
-                            "message": "string",
-                            "status": true,
-                            "on": {
-                              "date": "string",
-                              "timezone_type": 0,
-                              "timezone": "string"
-                            }
-                          },
-                          "highlighted": true,
-                          "image": {
-                            "title": "string",
-                            "description": "string",
-                            "caption": "string",
-                            "alt": "string",
-                            "rendered": "string",
-                            "sizes": "string",
-                            "srcset": "string",
-                            "meta": {
-                              "width": 0,
-                              "height": 0,
-                              "file": "string",
-                              "sizes": {
-                                "medium": {
-                                  "file": "string",
-                                  "width": 0,
-                                  "height": 0,
-                                  "mime-type": "string",
-                                  "url": "string",
-                                  "rendered": "string"
-                                },
-                                "large": {
-                                  "file": "string",
-                                  "width": 0,
-                                  "height": 0,
-                                  "mime-type": "string",
-                                  "url": "string",
-                                  "rendered": "string"
-                                },
-                                "thumbnail": {
-                                  "file": "string",
-                                  "width": 0,
-                                  "height": 0,
-                                  "mime-type": "string",
-                                  "url": "string",
-                                  "rendered": "string"
-                                },
-                                "medium_large": {
-                                  "file": "string",
-                                  "width": 0,
-                                  "height": 0,
-                                  "mime-type": "string",
-                                  "url": "string",
-                                  "rendered": "string"
-                                },
-                                "full": {
-                                  "file": "string",
-                                  "width": 0,
-                                  "height": 0,
-                                  "mime-type": "string",
-                                  "url": "string",
-                                  "rendered": "string"
-                                }
-                              }
-                            }
-                          },
-                          "links": [
-                            {}
-                          ],
-                          "notes": "string",
-                          "synonyms": "string",
-                          "taxonomies": {
-                            "openpub-audience": [
-                              {
-                                "id": 0,
-                                "name": "string",
-                                "slug": "string"
-                              }
-                            ],
-                            "openpub-type": [
-                              {
-                                "id": 0,
-                                "name": "string",
-                                "slug": "string"
-                              }
-                            ],
-                            "openpub-usage": [
-                              {
-                                "id": 0,
-                                "name": "string",
-                                "slug": "string"
-                              }
-                            ],
-                            "openpub-show-on": [
-                              {}
-                            ]
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "operationId": "get-nieuws-id",
-        "parameters": [],
-        "description": "Een specifiek nieuwsbericht opvragen."
-      },
-      "put": {
-        "summary": "",
-        "operationId": "put-nieuws-id",
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Nieuws"
-                }
-              }
-            }
-          }
-        },
-        "description": "Update een specifiek nieuwsbericht."
-      },
-      "delete": {
-        "summary": "",
-        "operationId": "delete-nieuws-id",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        },
-        "description": "Delete een specifiek nieuwsbericht."
+        "description": "Get a list of publications"
       }
     }
   },
   "components": {
     "schemas": {
-      "TaxonomieType": {
-        "title": "TaxonomieType",
+      "kiss_openpub_pub": {
+        "title": "Publication",
+        "x-stoplight": {
+          "id": "jzt0ufutjr090"
+        },
         "type": "object",
+        "description": "A publication conform the Open Pub standard",
         "properties": {
           "id": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "slug": {
-            "type": "string"
-          }
-        }
-      },
-      "Taxonomies": {
-        "title": "Taxonomies",
-        "type": "object",
-        "properties": {
-          "openpubAudience": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/TaxonomieType"
-            }
-          },
-          "openpubType": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/TaxonomieType"
-            }
-          },
-          "openpubUsage": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/TaxonomieType"
-            }
-          },
-          "openpubShowOn": {
-            "type": "array",
-            "items": {}
-          }
-        }
-      },
-      "Nieuws": {
-        "title": "Nieuws",
-        "type": "object",
-        "examples": [
-          {
-            "id": "string",
-            "title": "string",
-            "content": "string",
-            "excerpt": "string",
-            "date": "2019-08-24",
-            "slug": "string",
-            "post-status": "string",
-            "connected": {
-              "openpub-item_to_theme": [
-                null
-              ],
-              "openpub-item_to_openpub-subtheme": [
-                null
-              ],
-              "openpub-item_to_openpub-location": [
-                null
-              ],
-              "openpub-item_to_openpub-item": [
-                null
-              ]
-            },
-            "downloads": [
-              null
+            "type": [
+              "string",
+              "number"
             ],
-            "expired": {
-              "message": "string",
-              "status": true,
-              "on": {
-                "date": "2019-08-24",
-                "timezone_type": 0,
-                "timezone": "string"
-              }
-            },
-            "highlighted": true,
-            "image": {
-              "title": "string",
-              "description": "string",
-              "caption": "string",
-              "alt": "string",
-              "rendered": "string",
-              "sizes": "string",
-              "srcset": "string",
-              "meta": {
-                "width": 0,
-                "height": 0,
-                "file": "string",
-                "sizes": {
-                  "medium": {
-                    "file": "string",
-                    "width": 0,
-                    "height": 0,
-                    "mime-type": "string",
-                    "url": "string",
-                    "rendered": "string"
-                  },
-                  "large": {
-                    "file": "string",
-                    "width": 0,
-                    "height": 0,
-                    "mime-type": "string",
-                    "url": "string",
-                    "rendered": "string"
-                  },
-                  "thumbnail": {
-                    "file": "string",
-                    "width": 0,
-                    "height": 0,
-                    "mime-type": "string",
-                    "url": "string",
-                    "rendered": "string"
-                  },
-                  "medium_large": {
-                    "file": "string",
-                    "width": 0,
-                    "height": 0,
-                    "mime-type": "string",
-                    "url": "string",
-                    "rendered": "string"
-                  },
-                  "full": {
-                    "file": "string",
-                    "width": 0,
-                    "height": 0,
-                    "mime-type": "string",
-                    "url": "string",
-                    "rendered": "string"
-                  }
-                }
-              }
-            }
-          }
-        ],
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "title": {
-            "type": "string",
-            "maxLength": 255
-          },
-          "content": {
-            "type": "string"
-          },
-          "excerpt": {
-            "type": "string"
+            "example": 84,
+            "readOnly": true
           },
           "date": {
             "type": "string",
-            "format": "date"
+            "example": "2022-06-21T12:01:26"
+          },
+          "date_gmt": {
+            "type": "string",
+            "example": "2022-06-21T12:01:26"
+          },
+          "guid": {
+            "type": "object",
+            "properties": {
+              "rendered": {
+                "type": "string",
+                "example": "https://openweb.kiss-dev.commonground.nu/?post_type=kiss_openpub_pub&#038;p=84"
+              }
+            }
+          },
+          "modified": {
+            "type": "string",
+            "example": "2022-07-26T18:06:06"
+          },
+          "modified_gmt": {
+            "type": "string",
+            "example": "2022-07-26T18:06:06"
           },
           "slug": {
-            "type": "string"
+            "type": "string",
+            "example": "test-gina"
           },
-          "post-status": {
-            "type": "string"
+          "status": {
+            "type": "string",
+            "example": "publish"
           },
-          "connected": {
+          "type": {
+            "type": "string",
+            "example": "kiss_openpub_pub"
+          },
+          "link": {
+            "type": "string",
+            "example": "https://openweb.kiss-dev.commonground.nu/kiss_openpub_pub/test-gina/"
+          },
+          "title": {
             "type": "object",
             "properties": {
-              "openpub-item_to_theme": {
-                "type": "array",
-                "items": {}
-              },
-              "openpub-item_to_openpub-subtheme": {
-                "type": "array",
-                "items": {}
-              },
-              "openpub-item_to_openpub-location": {
-                "type": "array",
-                "items": {}
-              },
-              "openpub-item_to_openpub-item": {
-                "type": "array",
-                "items": {}
-              }
-            }
-          },
-          "downloads": {
-            "type": "array",
-            "items": {}
-          },
-          "expired": {
-            "type": "object",
-            "properties": {
-              "message": {
-                "type": "string"
-              },
-              "status": {
-                "type": "boolean"
-              },
-              "on": {
-                "type": "object",
-                "properties": {
-                  "date": {
-                    "type": "string",
-                    "format": "date"
-                  },
-                  "timezone_type": {
-                    "type": "integer"
-                  },
-                  "timezone": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          },
-          "highlighted": {
-            "type": "boolean"
-          },
-          "image": {
-            "type": "object",
-            "properties": {
-              "title": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "alt": {
-                "type": "string"
-              },
               "rendered": {
                 "type": "string"
-              },
-              "sizes": {
-                "type": "string"
-              },
-              "srcset": {
-                "type": "string"
-              },
-              "meta": {
-                "type": "object",
-                "properties": {
-                  "width": {
-                    "type": [
-                      "number",
-                      "integer"
-                    ]
-                  },
-                  "height": {
-                    "type": [
-                      "number",
-                      "integer"
-                    ]
-                  },
-                  "file": {
-                    "type": "string",
-                    "maxLength": 25
-                  },
-                  "sizes": {
-                    "type": "object",
-                    "properties": {
-                      "medium": {
-                        "type": "object",
-                        "properties": {
-                          "file": {
-                            "type": "string"
-                          },
-                          "width": {
-                            "type": [
-                              "number",
-                              "integer"
-                            ]
-                          },
-                          "height": {
-                            "type": [
-                              "number",
-                              "integer"
-                            ]
-                          },
-                          "mime-type": {
-                            "type": "string"
-                          },
-                          "url": {
-                            "type": "string"
-                          },
-                          "rendered": {
-                            "type": "string"
-                          }
-                        }
-                      },
-                      "large": {
-                        "type": "object",
-                        "properties": {
-                          "file": {
-                            "type": "string"
-                          },
-                          "width": {
-                            "type": [
-                              "number",
-                              "integer"
-                            ]
-                          },
-                          "height": {
-                            "type": [
-                              "number",
-                              "integer"
-                            ]
-                          },
-                          "mime-type": {
-                            "type": "string"
-                          },
-                          "url": {
-                            "type": "string"
-                          },
-                          "rendered": {
-                            "type": "string"
-                          }
-                        }
-                      },
-                      "thumbnail": {
-                        "type": "object",
-                        "properties": {
-                          "file": {
-                            "type": "string"
-                          },
-                          "width": {
-                            "type": [
-                              "number",
-                              "integer"
-                            ]
-                          },
-                          "height": {
-                            "type": [
-                              "number",
-                              "integer"
-                            ]
-                          },
-                          "mime-type": {
-                            "type": "string"
-                          },
-                          "url": {
-                            "type": "string"
-                          },
-                          "rendered": {
-                            "type": "string"
-                          }
-                        }
-                      },
-                      "medium_large": {
-                        "type": "object",
-                        "properties": {
-                          "file": {
-                            "type": "string"
-                          },
-                          "width": {
-                            "type": [
-                              "number",
-                              "integer"
-                            ]
-                          },
-                          "height": {
-                            "type": [
-                              "number",
-                              "integer"
-                            ]
-                          },
-                          "mime-type": {
-                            "type": "string"
-                          },
-                          "url": {
-                            "type": "string"
-                          },
-                          "rendered": {
-                            "type": "string"
-                          }
-                        }
-                      },
-                      "full": {
-                        "type": "object",
-                        "properties": {
-                          "file": {
-                            "type": "string"
-                          },
-                          "width": {
-                            "type": [
-                              "number",
-                              "integer"
-                            ]
-                          },
-                          "height": {
-                            "type": [
-                              "number",
-                              "integer"
-                            ]
-                          },
-                          "mime-type": {
-                            "type": "string"
-                          },
-                          "url": {
-                            "type": "string"
-                          },
-                          "rendered": {
-                            "type": "string"
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
               }
             }
           },
-          "links": {
+          "template": {
+            "type": "string"
+          },
+          "_links": {
+            "type": "object"
+          },
+          "acf": {
+            "type": "object",
+            "properties": {
+              "publicationTitle": {
+                "type": "string"
+              },
+              "publicationContent": {
+                "type": "string"
+              },
+              "publicationType": {
+                "type": "number"
+              },
+              "publicationSkill": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                }
+              },
+              "publicationEndDate": {
+                "type": "string",
+                "format": "date-time",
+                "example": "2022-07-26T18:06:06"
+              },
+              "publicationFeatured": {
+                "type": "boolean"
+              }
+            }
+          },
+          "openpub_type": {
             "type": "array",
-            "items": {}
+            "items": {
+              "type": "number"
+            }
           },
-          "notes": {
-            "type": "string"
-          },
-          "synonyms": {
-            "type": "string"
-          },
-          "taxonomies": {
-            "$ref": "#/components/schemas/Taxonomies"
+          "openpub_skill": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
           }
         }
       }
